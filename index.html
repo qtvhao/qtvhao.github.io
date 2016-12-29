@@ -1,1 +1,813 @@
-# qtvhao.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>document.write('<title>' + location.hostname + '</title>')</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px Arial, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron {
+            background-color: #f4511e;
+            color: #fff;
+            padding: 100px 25px;
+            /*background: url(http://i.imgur.com/1AyRbfY.jpg) no-repeat;*/
+            /*background-size: cover;*/
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .carousel-control.right, .carousel-control.left {
+            background-image: none;
+            color: #f4511e;
+        }
+
+        .carousel-indicators li {
+            border-color: #f4511e;
+        }
+
+        .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+
+        .item span {
+            font-style: normal;
+        }
+
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius: 0 !important;
+            transition: box-shadow 0.1s;
+        }
+
+        .panel:hover {
+            box-shadow: 5px 0 40px rgba(0, 0, 0, .2);
+        }
+
+        .panel-footer .btn:hover, #contact .btn:hover, .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+
+        .main-section .btn {
+            border-color: white;
+            background: #f4511e;
+        }
+
+        .main-section .btn:hover {
+            background-color: white;
+            color: #f4511e;
+        }
+
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-radius: 0;
+        }
+
+        .panel-footer {
+            background-color: white !important;
+        }
+
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .panel-footer .btn, #contact .btn, .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+
+        /*.flex-children{
+           display:flex;
+        }.flex-children .col-sm-4 .panel{
+            flex:1;
+            height: 100%;
+        }*/
+        .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .main-price {
+            border-left: 5px solid #f4511e;
+            color: #f4511e;
+            transition: 200ms;
+        }
+
+        .panel .main-price:hover {
+            background-color: #f4511e;
+            color: white;
+        }
+        [data-toggle='tooltip']{
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        var company_name = location.hostname;
+        var address      = 'Phòng trọ số 2, nhà số 20, ngõ 196 Trần Duy Hưng - Trung Hòa - Cầu Giấy - Hà Nội';
+        var write = function (t) {
+            document.write(t);
+        };
+        Array.prototype.displayAsList = function () {
+            write('<ul>');
+            this.map(function (t) {
+                write('<li>' + t + '</li>');
+            });
+            write('</ul>');
+        };
+        function setCookie(cookie_name, cookie_value, expire_after_n_days) {
+            var d = new Date();
+            d.setTime(d.getTime() + (expire_after_n_days * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cookie_name + "=" + cookie_value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+    </script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav style="    text-transform: uppercase;    border-bottom: 1px solid white;"
+     class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">
+                <script>document.write(company_name)</script>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">Giới thiệu</a></li>
+                <!--                <li><a href="#services">Dịch vụ</a></li>
+                                <li><a href="#portfolio">Kinh nghiệm</a></li>-->
+                <li><a href="#pricing">Học phí</a></li>
+                <li><a href="#contact">Tư vấn</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="">
+    <div class="jumbotron text-center main-section">
+        <h1>
+            Học lập trình để kiếm một công việc tốt
+        </h1>
+        <p>
+            Học lập trình, không chỉ kiếm đủ sống mà còn nhiều tiền và được mọi người ngưỡng mộ
+            <br/>
+            <br/>
+            <br/>
+        </p>
+        <form class="form-inline">
+            <div class="input-group">
+                <!--<input type="text" class="form-control" size="50" placeholder="Nhập Email hoặc số điện thoại" required>-->
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger btn-lg"
+                            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCU7uoLpYEbc15FeiqSX9F4KBCLWvJ8cRt14UYeB9mSrAh1g/viewform?entry.670154567=Click+%C4%91%E1%BB%83+nh%E1%BA%ADp+s%E1%BB%91+%C4%91i%E1%BB%87n+tho%E1%BA%A1i')">
+                        Nhận tư vấn từ chuyên gia
+                    </button>
+                </div>
+            </div>
+        </form>
+        <p>
+            Hãy để chúng tôi tư vấn và giúp bạn tận dụng cơ hội hiếm có này
+            <br/>
+            Đăng ký học để thay đổi cuộc đời
+        </p>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Giới thiệu về chúng tôi</h2><br>
+                <h4>Và chúng tôi đã làm được những gì?</h4><br>
+                <p>
+                    Bắt đầu từ 12/2015 với ý tưởng khiến lập trình dễ học hơn và giúp nhiều người hơn có một việc làm tốt
+                    với nghề lập trình viên.<br/>
+                    Tới 4/2016 chúng tôi đã nghiên cứu, phát triển thành công và khóa học đầu tiên đã giúp học viên nắm
+                    vững kỹ thuật lập trình web với kết quả kiểm tra rất tốt. <br>
+                    Năm 2017, chúng tôi sẽ áp dụng thêm nhiều công thức đã được chứng minh là hiệu quả, giúp người học nhanh chóng nắm rõ lý thuyết lập trình căn bản và thực hành lập trình thành thạo website.
+                </p>
+                <br>
+                <button class="btn btn-default btn-lg">Nói chuyện trực tiếp với chuyên gia</button>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>Tầm nhìn và Sứ mệnh</h2><br>
+                <h4><strong>Sứ mệnh:</strong> <br>Nhiều người ước mơ thật lớn, nhưng thời gian họ dành cho ước mơ đó quá ít...
+                    <br>
+                    Nhiều người lại dành nhiều thời gian cho ước mơ, mà từ bỏ những niềm vui xung quanh mình...
+                    <br>
+                    Xã hội càng lúc càng trọng thực lực, sinh viên thiếu kĩ năng tự ti và thất bại không đứng lên được.
+                    <br>
+                    Có rất nhiều sinh viên, người đi làm thêm, người thất nghiệp đang mong muốn có một công việc ổn định với mức lương tốt.
+                    <br> <script>write(company_name);</script> được sinh ra, mang một sứ mệnh, giúp các bạn trẻ tìm thấy đam mê học hỏi, để hăng say làm việc, tự tin xin việc và có một công việc tuyệt vời với mức lương cao tương xứng, và sống một cuộc đời hạnh phúc ý nghĩa.</h4><br>
+                <p><strong>Tầm nhìn: </strong>
+                    <script>write(company_name)</script> có tầm nhìn sẽ trở thành nơi đào tạo tin học, lập trình, thiết kế lập trình website, uy tín hàng đầu tại Hà Nội vào năm 2020 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <!--<div id="services" class="container-fluid text-center">
+        <h2>Dịch vụ</h2>
+        <h4>Chúng tôi phục vụ</h4>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-off logo-small"></span>
+                <h4>POWER</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-heart logo-small"></span>
+                <h4>LOVE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-lock logo-small"></span>
+                <h4>JOB DONE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-leaf logo-small"></span>
+                <h4>GREEN</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-certificate logo-small"></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-wrench logo-small"></span>
+                <h4 style="color:#303030;">HARD WORK</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Container (Portfolio Section) -->
+    <!--<div id="portfolio" class="container-fluid text-center bg-grey">
+        <h2>Kinh nghiệm</h2><br>
+        <h4>What we have created</h4>
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="http://www.w3schools.com/bootstrap/paris.jpg" alt="Paris" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Yes, we built Paris</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="http://www.w3schools.com/bootstrap/newyork.jpg" alt="New York" width="400" height="300">
+                    <p><strong>New York</strong></p>
+                    <p>We built New York</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="http://www.w3schools.com/bootstrap/sanfran.jpg" alt="San Francisco" width="400" height="300">
+                    <p><strong>San Francisco</strong></p>
+                    <p>Yes, San Fran is ours</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <h2>What our customers say</h2>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span>
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span>
+                    </h4>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>-->
+
+    <!-- Container (Pricing Section) -->
+    <div id="pricing" class="container-fluid">
+        <div class="text-center">
+            <h2>Học phí</h2>
+            <h4>Chọn gói học phù hợp với bạn</h4>
+        </div>
+        <div class="row slideanim flex-children">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <script>
+                            var write_list_fixed_height = function (t) {
+                                document.write(t.join(''));
+                                for (var i = 1; i <= (12 - t.length); i++) {
+                                    document.write('<p>&nbsp;</p>');
+                                }
+                            };
+                            var basic_plan_html = [
+                                "<p><strong>850</strong> phút học qua video</p>",
+                                "<p><strong>190</strong> bài kiểm tra</p>",
+                                "<p style='    border-top: 1px dashed #e2e2e2;'>&nbsp;</p>"
+                            ];
+                            var pro_plan_html = [
+                                "<p><strong>Trọn đời</strong> tư vấn học lập trình</p>",
+                                "<p><strong>Trọn đời</strong> tư vấn việc làm</p>",
+                                "<p><strong>Trọn đời</strong> chứng chỉ <span style='color:red'>(*)</span></p>",
+                                "<p style='    border-top: 1px dashed #e2e2e2;'>&nbsp;</p>"
+                            ];
+                            var premium_plan_html = [
+                                "<p><strong>Miễn phí</strong> tư vấn học tiếng Anh chuyên ngành</p>",
+                                '<p><strong>8</strong> buổi học trực tiếp cùng chuyên gia</p>',
+                                "<p><strong>Tặng miễn phí 350</strong> phút học qua video</p>",
+                                "<p data-toggle='tooltip' title='Học viên được học lại khóa học miễn phí bất cứ lúc nào !'><strong>Không giới hạn</strong> học lại miễn phí</p>",
+                                '<p><strong>Coupon 10% </strong> <code>10PERCENT</code></p>'
+                            ];
+                        </script>
+                        <script>write_list_fixed_height(basic_plan_html)</script>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="strikethrough">
+                            <p>Học phí gốc</p>
+                            <h4>590.000 đ</h4>
+                        </div>
+                        <div class="main-price">
+                            <p class="lead">Chỉ còn</p>
+                            <h3>390.000 đ</h3>
+                        </div>
+                        <a target="_blank" href="https://goo.gl/forms/JzSg3arcSBPOm7Qn1" class="btn btn-lg">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Pro</h1>
+                    </div>
+                    <div class="panel-body">
+                        <script>write_list_fixed_height(basic_plan_html.concat(pro_plan_html))</script>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="strikethrough">
+                            <p>Học phí gốc</p>
+                            <h4>690.000 đ</h4>
+                        </div>
+                        <div class="main-price">
+                            <p class="lead">Chỉ còn</p>
+                            <h3>580.000 đ</h3>
+                        </div>
+                        <a target="_blank" href="https://goo.gl/forms/JzSg3arcSBPOm7Qn1" class="btn btn-lg">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Premium</h1>
+                    </div>
+                    <div class="panel-body">
+                        <script>write_list_fixed_height(basic_plan_html.concat(pro_plan_html).concat(premium_plan_html));</script>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="strikethrough">
+                            <p>Học phí gốc</p>
+                            <h4>1.290.000 đ</h4>
+                        </div>
+                        <div class="main-price">
+                            <p class="lead">Chỉ còn</p>
+                            <h3>590.000 đ</h3>
+                        </div>
+
+                        <a target="_blank" href="https://goo.gl/forms/JzSg3arcSBPOm7Qn1" class="btn btn-lg">Đăng ký</a>
+                        <button class="btn btn-lg"
+                                onclick="if(confirm('Học phí được đóng thành 2 lần, lần đầu 150.000đ đăng ký giữ chỗ, khi muốn đi học bạn sẽ đóng lần hai số tiền còn lại của học phí. Tổng cộng 2 lần đóng tiền chỉ 590.000đ'))window.open('https://goo.gl/forms/JzSg3arcSBPOm7Qn1');"
+                                title="Đăng ký giữ chỗ ngay bây giờ và học sau" data-toggle="tooltip">Giữ chỗ miễn phí
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h2>Khóa lập trình Website gói Premium chất lượng cao</h2>
+        </div>
+        <div class="row slideanim flex-children">
+            <div class="col-md-12">
+                <h3>Giới thiệu</h3>
+                <div>
+                    <script>
+                        [
+                            '<strong>Nếu bạn muốn tự tay lập trình website tiếp thị, truyền thông, CV xin việc, website giới thiệu bản thân tới người khác thì đây chính là khoá học dành cho bạn!</strong>',
+                            ' Khoá học kéo dài 8 buổi trong vòng 1 tháng (mỗi tuần 2 buổi).'
+                        ].displayAsList();
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h3>Chi tiết</h3>
+                <!--https://www.youtube.com/watch?v=4YglRVf6o0w-->
+                <!-- sẽ là nguồn cảm hứng vô hạn để bạn bắt đầu con đường thiết kế của mình.
+
+                Giảng viên siêu nhiệt tình và dễ thương sẽ giúp những bài giảng dễ hiểu trở nên thú vị hơn với bạn đó.
+                Bật mí thêm cho bạn, các phòng học của colorME đẹp lung linh, ảo cực, đây sẽ là nơi để bạn tuôn trào cảm hứng và tạo ra những tác phẩm để đời!-->
+                <script>
+                    [
+                        'Bạn sẽ được lập trình những dự án lớn và tự tay thuyết trình về dự án của mình.',
+                        'Thành công của bạn là bằng chứng nhận lớn nhất cho chất lượng đào tạo của ' + company_name,
+                        'Và tất nhiên, không thể thiếu, bạn sẽ nhận được chứng chỉ từ ' + company_name + ' sau khi hoàn thành khoá học nữa đó!'
+                    ].displayAsList();
+                </script>
+                <!--https://www.youtube.com/watch?v=o1RhowB57B4-->
+            </div>
+            <div class="col-md-12">
+                <h3>Khoá học này giúp bạn</h3>
+                <script>
+                    [
+                        "Tự tay lập trình website tiếp thị (landingpage, banner, mẫu nhập dữ liệu,...)",
+                        "Tạo website CV hồ sơ xin việc chinh phục nhà tuyển dụng",
+                        "Nắm vững lý thuyết lập trình căn bản và lập trình thành thạo website."
+                    ].displayAsList();
+                </script>
+                <!--            Link tham khảo bài tập học viên sau khi hoàn thành khóa học: -->
+            </div>
+            <div class="col-md-12">
+                <h3>
+                    Chính sách giá
+                </h3>
+                <script>
+                    /*Link event thông tin khóa học: https://www.facebook.com/events/202994166826723/ (chỉ cần copy link này và paste lên timeline cá nhân của bạn là okie ạ)*/
+                    [
+                        '<strong>Siêu ưu đãi</strong>, Share event, đăng kí và hoàn thành học phí sớm: Học phí giảm <strong>200.000 đ</strong>',
+                        'Đăng kí theo nhóm 3 người và hoàn thành học phí sớm: Học phí giảm <strong>100.000 đ</strong>'
+                    ].displayAsList()
+                </script>
+                <h3>Lưu ý</h3>
+
+                *Các khóa học học viên vui lòng mang laptop cá nhân theo để thực hành. phần mềm
+                <script>write(company_name)</script>
+                sẽ hỗ trợ bạn cài đặt.
+                <h3>Lịch học</h3>
+                <p>
+                    (7h-9h tối) Thứ 3 - Thứ 5 - Thứ 7 <br>
+                    <script>write(address)</script>
+                    <br>
+                    Khai giảng ngày 30 tháng 1 năm 2017
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">Tìm hiểu thêm</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Để lại câu hỏi và chúng tôi sẽ trả lời bạn trong vòng 12 tiếng</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>
+                    <script>write(address)</script></p>
+                <p><span class="glyphicon glyphicon-phone"></span> 098.359.0363</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> qtvhao@gmail.com</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+                <form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSepDgQ1VExXJjpdhwFxwf5Nve8tVo-_kXTW2EcN3n7t1E4qxw/viewform" method="get">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="entry.1057078220" placeholder="Tên của bạn" type="text">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="number-phone" name="entry.1305844495" placeholder="Số điện thoại của bạn" type="text">
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="entry.521895337" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Nhận tư vấn từ
+                                <script>write(company_name)</script></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--
+
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+
+    &lt;!&ndash; Add Google Maps &ndash;&gt;
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+        function initialize() {
+            var mapProp = {
+                center:myCenter,
+                zoom:12,
+                scrollwheel:false,
+                draggable:false,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker = new google.maps.Marker({
+                position:myCenter,
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    -->
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Theme Made By <a href="https://kipalog.com/" target="_blank" title="Visit Kipalog">Kipalog</a></p>
+    </footer>
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <script>
+                    function validateForm() {
+                        if(jQuery('#popup_input_sodienthoai').val()==''){
+                            jQuery('.sodienthoaikhonghople').show();
+                        }else{
+                            //valid input
+                            setCookie('popup_shown_phone_number', 'true', 365);
+                            jQuery('#myModal').modal('hide');
+                        }
+                    }
+                </script>
+                <form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSdCU7uoLpYEbc15FeiqSX9F4KBCLWvJ8cRt14UYeB9mSrAh1g/viewform" onsubmit="validateForm()">
+                    <input type="number" id="popup_input_sodienthoai" class="form-control" required name="entry.670154567" title="" placeholder="Click nhập số diện thoại của bạn">
+                    <span class="hide sodienthoaikhonghople">Số điện thoại không hợp lệ. Vui lòng nhập lại!</span>
+                    Chúng tôi sẽ gọi cho bạn khi quay lại làm việc vào ngày mai
+                    <div class="form-group">
+                        <select name="buoi" class="form-control" id="buoi_callback" title="">
+                            <option value="sang">vào buổi sáng</option>
+                            <option value="trua">vào buổi trưa</option>
+                            <option value="toi">vào buổi tối</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-lg btn-danger" type="submit">Click để được gọi lại</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 300, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        });
+
+        // Slide in elements on scroll
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        }).trigger('scroll');
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        if(getCookie('popup_shown_phone_number') !== 'true') {
+            $("#myModal").modal();
+        }
+    });
+</script>
+
+</body>
+</html>
