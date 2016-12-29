@@ -288,6 +288,10 @@
         }
 
     </script>
+    <script>if (location.protocol != 'https:')
+    {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }</script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav style="    text-transform: uppercase;    border-bottom: 1px solid white;"
