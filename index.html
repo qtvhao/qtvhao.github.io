@@ -504,7 +504,7 @@
                     (7h-9h tối) Thứ 3 - Thứ 5 - Thứ 7 <br>
                     <script>write(address)</script>
                     <br>
-                    Khai giảng ngày 30 tháng 1 năm 2017
+                    Khai giảng ngày 30 tháng 2 năm 2017
                 </p>
             </div>
         </div>
@@ -593,14 +593,22 @@
 
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-bg" style="
+    background: url(http://i.imgur.com/dYNBRGJ.png);
+    position: absolute;
+    height: 457px;
+    width: 186px;
+    left: -88px;
+    bottom: 0;
+"></div>
+            <div class="modal-body" style="padding: 30px 40px 30px 100px;">
                 <script>
                     function validateForm() {
                         if (jQuery('#popup_input_sodienthoai').val() == '') {
                             jQuery('.sodienthoaikhonghople').show();
                         } else {
                             //valid input
-                            setCookie('popup_shown_phone_number', 'true', 365);
+                            setCookie('no_show_modal_get_phone_number', 'true', 365);
                             jQuery('#myModal').modal('hide');
                         }
                     }
@@ -608,6 +616,13 @@
                 <form target="_blank"
                       action="https://docs.google.com/forms/d/e/1FAIpQLSdCU7uoLpYEbc15FeiqSX9F4KBCLWvJ8cRt14UYeB9mSrAh1g/viewform"
                       onsubmit="validateForm()">
+                    <div style="font-size: 35px;line-height: normal;color:#f4511e">BẠN ĐÃ NHẬN MÃ GIẢM GIÁ 700.000 ĐỒNG CỦA
+                    <script>write(company_name)</script> !!!</div>
+                    <div>
+                        Chúc mừng bạn là <strong>người may mắn đăng ký sớm</strong> của ngày hôm nay, hãy điền thông tin vào ô dưới để nhận ngay MÃ GIẢM GIÁ 700.000 đồng cho khóa học.
+                    </div>
+                    <div><span style="color:red">*</span> Mã giảm giá sẽ hết hạn sau ngày
+                        <script>write(dd_mm_yy_tomorrow())</script></div>
                     <input type="number" id="popup_input_sodienthoai" class="form-control" required
                            name="entry.670154567" title="" placeholder="Click nhập số diện thoại của bạn">
                     <span class="hide sodienthoaikhonghople">Số điện thoại không hợp lệ. Vui lòng nhập lại!</span>
@@ -662,7 +677,7 @@
     });
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
-        if (getCookie('popup_shown_phone_number') !== 'true') {
+        if (getCookie('no_show_modal_get_phone_number') !== 'true') {
             $("#myModal").modal();
         }
     });
