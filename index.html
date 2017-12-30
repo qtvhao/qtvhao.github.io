@@ -1,687 +1,1358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi" class="no-js">
 <head>
-    <script>document.write('<title>' + location.hostname + '</title>')</script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="app.css">
-    <script>
-        var company_name = location.hostname;
-        var address = 'Phòng trọ số 2, nhà số 20, ngõ 196 Trần Duy Hưng - Trung Hòa - Cầu Giấy - Hà Nội';
-        var write = function (t) {
-            document.write(t);
-        };
-        Array.prototype.displayAsList = function () {
-            write('<ul>');
-            this.map(function (t) {
-                write('<li>' + t + '</li>');
-            });
-            write('</ul>');
-        };
-        function setCookie(cookie_name, cookie_value, expire_after_n_days) {
-            var d = new Date();
-            d.setTime(d.getTime() + (expire_after_n_days * 24 * 60 * 60 * 1000));
-            var expires = "expires=" + d.toUTCString();
-            document.cookie = cookie_name + "=" + cookie_value + ";" + expires + ";path=/";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	        <title>Khóa học CSS cho người mới bắt đầu &#8211; Home</title>
+		<link rel='dns-prefetch' href='index.html' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Home &raquo;" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Home &raquo;" href="comments/feed/index.html" />
+<link rel='stylesheet' id='eae-css-css'  href='wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/eae.css' type='text/css' media='all' />
+<style id='std-wp-elementor-inline-css' type='text/css'>
+@media screen and (min-width: 56.875em){
+	 .elementor-navigation .menu-item-has-children > a:after {
+	    right: 1em!important;
+	    top: unset!important;
+	}
+}
+body{
+	padding:0!important;
+	margin:0!important;
+}
+.elementor-image img {
+    display: inline-block!important;
+}
+</style>
+<link rel='stylesheet' id='pt-team-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-team.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-flipbox-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-flipbox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-dual-btn-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-dual-btn.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-timelines-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-timelines.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-info-box-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-info-box.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-inter-styles-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-styles-interactive-banner.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-testimonial-css'  href='wp-content/plugins/pt-elementor-addons-lite/assets/css/pt-testimonial.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='wp-content/themes/twentytwelve/style.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://shop2yqupwku.tanzaki.com/wp-content/themes/twentytwelve/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='nunito-sans-css'  href='http://fonts.googleapis.com/css?family=Nunito+Sans%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic&#038;ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='wp-content/plugins/elementor/assets/css/animations.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='wp-content/plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+.elementor-widget-heading .elementor-heading-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-image .widget-image-caption{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-text-editor{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#6ec1e4;}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:#6ec1e4;border-color:#6ec1e4;}.elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-divider .elementor-divider-separator{border-top-color:#7a7a7a;}.elementor-widget-image-box .elementor-image-box-content .elementor-image-box-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-icon.elementor-view-stacked .elementor-icon{background-color:#6ec1e4;}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon{color:#6ec1e4;border-color:#6ec1e4;}.elementor-widget-icon-box.elementor-view-stacked .elementor-icon{background-color:#6ec1e4;}.elementor-widget-icon-box.elementor-view-framed .elementor-icon, .elementor-widget-icon-box.elementor-view-default .elementor-icon{color:#6ec1e4;border-color:#6ec1e4;}.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-image-gallery .gallery-item .gallery-caption{font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-image-carousel .elementor-image-carousel-caption{font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after{border-top-color:#7a7a7a;}.elementor-widget-icon-list .elementor-icon-list-icon i{color:#6ec1e4;}.elementor-widget-icon-list .elementor-icon-list-text{color:#54595f;}.elementor-widget-icon-list .elementor-icon-list-item{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-counter .elementor-counter-number-wrapper{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-counter .elementor-counter-title{color:#54595f;font-family:"Roboto Slab", Sans-serif;font-weight:400;}.elementor-widget-progress .elementor-progress-wrapper .elementor-progress-bar{background-color:#6ec1e4;}.elementor-widget-progress .elementor-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-testimonial .elementor-testimonial-content{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-testimonial .elementor-testimonial-name{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-testimonial .elementor-testimonial-job{color:#54595f;font-family:"Roboto Slab", Sans-serif;font-weight:400;}.elementor-widget-tabs .elementor-tab-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-tabs .elementor-tab-title.elementor-active{color:#61ce70;}.elementor-widget-tabs .elementor-tab-content{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-accordion .elementor-accordion .elementor-tab-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-accordion .elementor-accordion .elementor-tab-title.elementor-active{color:#61ce70;}.elementor-widget-accordion .elementor-accordion .elementor-tab-content{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-toggle .elementor-toggle .elementor-tab-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-toggle .elementor-toggle .elementor-tab-title.elementor-active{color:#61ce70;}.elementor-widget-toggle .elementor-toggle .elementor-tab-content{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-alert .elementor-alert-title{font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-alert .elementor-alert-description{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-wts-textseparator .eae-separator-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-textseparator .eae-sep-lines{border-top-color:#6ec1e4;}.elementor-widget-wts-textseparator .eae-separator-icon-inner i{color:#6ec1e4;}.elementor-widget-wts-textseparator.eae-icon-view-stacked .eae-separator-icon-inner{background-color:#6ec1e4;}.elementor-widget-wts-textseparator.eae-icon-view-framed .eae-separator-icon-inner, .elementor-widget-wts-textseparator.eae-icon-view-default .eae-separator-icon-inner{color:#6ec1e4;border-color:#6ec1e4;}.elementor-widget-wts-pricetable .wts-price-box-wrapper{background-color:#6ec1e4;}.elementor-widget-wts-pricetable .eae-pt-heading{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-pricetable .eae-pt-sub-heading{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-pricetable .plan-price-shape-inner .price-text{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-pricetable .plan-price-shape-inner .price-subtext{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-pricetable .eae-pt-feature-list li{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-pricetable .eae-pt-button-wrapper{background-color:#6ec1e4;}.elementor-widget-wts-pricetable .eae-pt-action-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-wts-flipbox .front-icon-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-wts-flipbox .eae-flip-box-front p{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-wts-flipbox .eae-flip-box-front .icon-wrapper i{color:#6ec1e4;}.elementor-widget-wts-flipbox .eae-fb-icon-view-stacked{background-color:#6ec1e4;}.elementor-widget-wts-flipbox .back-icon-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-wts-flipbox .eae-flip-box-back p{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-wts-flipbox .eae-flip-box-back .icon-wrapper i{color:#6ec1e4;}.elementor-widget-wts-flipbox .eae-flip-box-back .eae-fb-icon-view-stacked{background-color:#6ec1e4;}.elementor-widget-wts-flipbox .eae-fb-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-wts-shape-separator svg{fill:#6ec1e4;}.elementor-widget-wts-postlist .eae-pl-title a{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-postlist .eae-pl-content-box{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-wts-postlist .eae-pl-readmore a{color:#7a7a7a;font-family:"Roboto", Sans-serif;font-weight:400;background-color:#6ec1e4;}.elementor-widget-wts-AnimatedText .eae-at-pre-text{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-AnimatedText .eae-at-animation-text{font-family:"Roboto", Sans-serif;font-weight:600;color:#61ce70;}.elementor-widget-wts-AnimatedText .eae-at-animation-text-wrapper::after{background-color:#6ec1e4;}.elementor-widget-wts-AnimatedText .eae-at-post-text{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-splittext .eae-st-split-text{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-wts-splittext .eae-st-rest-text{color:#54595f;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-Pt-team .pt-title.pt-title-text-align .team-title-color{color:#6ec1e4;}.elementor-widget-Pt-team .designation.designation-text-align .designation_title_color{color:#6ec1e4;}.elementor-widget-Pt-team a.elementor-button, .elementor-widget-Pt-team .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-Pt-flipbox .front-icon-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-Pt-flipbox .pt-flip-box-front p{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-Pt-flipbox .pt-flip-box-front .icon-wrapper i{color:#6ec1e4;}.elementor-widget-Pt-flipbox .pt-fb-icon-view-stacked{background-color:#6ec1e4;}.elementor-widget-Pt-flipbox .back-icon-title{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-Pt-flipbox .pt-flip-box-back p{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-widget-Pt-flipbox .pt-flip-box-back .icon-wrapper i{color:#6ec1e4;}.elementor-widget-Pt-flipbox .pt-flip-box-back .pt-fb-icon-view-stacked{background-color:#6ec1e4;}.elementor-widget-Pt-flipbox .pt-fb-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-pt_advanced_button .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-pt_advanced_button .dual-button-left{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-pt_advanced_button .dbwt-button-left{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-pt_advanced_button .dbwt-button-text{background-color:#61ce70;}.elementor-widget-pt_advanced_button .dbwt-btn-icon{background-color:#61ce70;}.elementor-widget-pt_advanced_button .dual-button-right{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-pt_advanced_button .dbwt-button-right{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}.elementor-widget-pt-post-timeline .pt-timeline-post-title h2{font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-pt-post-timeline .pt-timeline-post-excerpt p{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-Pt-infobox .pt-title .title-color{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-Pt-infobox .pt-description{color:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-Pt-infobox.elementor-view-stacked .elementor-icon{background-color:#6ec1e4;}.elementor-widget-Pt-infobox.elementor-view-framed .elementor-icon, .elementor-widget-Pt-infobox.elementor-view-default .elementor-icon{color:#6ec1e4;border-color:#6ec1e4;}.elementor-widget-pt-interactive_banner .pt-interactive_banner-wrapper .pt-interactive-banner-box .banner_title{color:#6ec1e4;background:#6ec1e4;font-family:"Roboto", Sans-serif;font-weight:600;}.elementor-widget-pt-interactive_banner .pt-interactive_banner-wrapper .pt-interactive-banner-box .banner_title:hover{color:#54595f;font-family:"Roboto Slab", Sans-serif;font-weight:400;}.elementor-widget-pt-interactive_banner .pt-interactive_banner-wrapper .pt-interactive-banner-box .pt-description{color:#7a7a7a;}.elementor-widget-pt-interactive_banner .pt-interactive_banner-wrapper .pt-interactive-banner-box .pt-description p{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-pt-interactive_banner .pt-interactive_banner-wrapper .pt-interactive-banner-box .pt-description a{color:#7a7a7a;}.elementor-widget-sjea-row-separator svg{fill:#6ec1e4;}.elementor-widget-sjea-subscribe-form .sjea-el-field-group > label, .elementor-widget-sjea-subscribe-form .sjea-el-field-subgroup label{color:#7a7a7a;}.elementor-widget-sjea-subscribe-form .sjea-el-field-group > label{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-sjea-subscribe-form .sjea-el-field-group .elementor-field{color:#7a7a7a;}.elementor-widget-sjea-subscribe-form .sjea-el-field-group .elementor-field, .elementor-widget-sjea-subscribe-form .sjea-el-field-subgroup label{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-widget-sjea-subscribe-form .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;background-color:#61ce70;}
+.elementor-5 .elementor-element.elementor-element-65f06100{background-color:rgba(255,255,255,0.79);background-image:url("wp-content/uploads/2017/12/Untitled-1-1.png");background-position:center center;background-repeat:no-repeat;background-size:cover;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:0px 0px 120px 0px;}.elementor-5 .elementor-element.elementor-element-65f06100 > .elementor-background-overlay{background-color:#1b1b24;opacity:0.76;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5d05057e > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5d05057e > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-c447a2c{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-c447a2c > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-8476e37 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-8476e37 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-fca7b1c .elementor-heading-title{color:#4285f4;font-size:2.2em;font-family:"Ubuntu", Sans-serif;font-weight:400;font-style:italic;}.elementor-5 .elementor-element.elementor-element-fca7b1c .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-0f2f795 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-0f2f795 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-6ea435a .elementor-text-editor{text-align:right;}.elementor-5 .elementor-element.elementor-element-6ea435a{color:#d3d3d3;font-size:1.3em;}.elementor-5 .elementor-element.elementor-element-6ea435a .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-a94ca2a{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-a94ca2a > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-ffa459e > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-ffa459e > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-4699b4f{text-align:center;}.elementor-5 .elementor-element.elementor-element-4699b4f .elementor-heading-title{color:#ffffff;font-size:40px;font-family:"Nunito Sans", Sans-serif;line-height:1.5em;}.elementor-5 .elementor-element.elementor-element-4699b4f > .elementor-widget-container{padding:20px 20px 20px 20px;}.elementor-5 .elementor-element.elementor-element-4699b4f .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5d024363 > .elementor-container{max-width:924px;}.elementor-5 .elementor-element.elementor-element-5d024363{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-5d024363 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-7d00649b > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:0px 020px 0px 0px;}.elementor-5 .elementor-element.elementor-element-7d00649b > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5040a59d a.elementor-button, .elementor-5 .elementor-element.elementor-element-5040a59d .elementor-button{font-size:17px;font-family:"Roboto", Sans-serif;font-weight:400;text-transform:uppercase;background-color:rgba(0,0,0,0);border-radius:8px 8px 8px 8px;padding:15px 37px 15px 37px;}.elementor-5 .elementor-element.elementor-element-5040a59d a.elementor-button:hover, .elementor-5 .elementor-element.elementor-element-5040a59d .elementor-button:hover{color:#2185f5;background-color:rgba(255,255,255,0.77);border-color:rgba(255,255,255,0.68);}.elementor-5 .elementor-element.elementor-element-5040a59d .elementor-button{border-style:solid;border-width:2px 2px 2px 2px;}.elementor-5 .elementor-element.elementor-element-5040a59d .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-28cfea7b > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:0px 0px 0px 20px;}.elementor-5 .elementor-element.elementor-element-28cfea7b > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-23c3773b a.elementor-button, .elementor-5 .elementor-element.elementor-element-23c3773b .elementor-button{font-size:17px;font-family:"Roboto", Sans-serif;font-weight:400;text-transform:uppercase;background-color:#2185f5;border-radius:8px 8px 8px 8px;padding:15px 034px 15px 34px;}.elementor-5 .elementor-element.elementor-element-23c3773b a.elementor-button:hover, .elementor-5 .elementor-element.elementor-element-23c3773b .elementor-button:hover{color:#2185f5;background-color:rgba(255,255,255,0);border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-23c3773b .elementor-button{border-style:solid;border-width:2px 2px 2px 2px;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-23c3773b .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2688853 > .elementor-container{min-height:0px;}.elementor-5 .elementor-element.elementor-element-2688853{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top:0px;margin-bottom:0px;padding:53px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-2688853 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-6bc0ac2 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-6bc0ac2 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-c3d08db .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-637b838 .elementor-heading-title{color:#494949;}.elementor-5 .elementor-element.elementor-element-637b838 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-085ea9f .elementor-toggle .elementor-tab-title{border-width:1px;background-color:#2185f5;color:#ffffff;}.elementor-5 .elementor-element.elementor-element-085ea9f .elementor-toggle .elementor-tab-content{border-width:1px;}.elementor-5 .elementor-element.elementor-element-085ea9f > .elementor-widget-container{border-radius:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-085ea9f .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-d6e446a > .elementor-container{max-width:570px;min-height:549px;}.elementor-5 .elementor-element.elementor-element-d6e446a{background-image:url("wp-content/uploads/2017/12/library-bg-1200.png");transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top:34px;margin-bottom:34px;}.elementor-5 .elementor-element.elementor-element-d6e446a > .elementor-background-overlay{background-color:#6aacc4;opacity:0.5;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-d74086d > .elementor-element-populated{background-color:#ffffff;box-shadow:0px 0px 2px 0px rgba(0,0,0,0.77);transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:64px 64px 64px 64px;}.elementor-5 .elementor-element.elementor-element-d74086d > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-e4a873b{text-align:center;}.elementor-5 .elementor-element.elementor-element-e4a873b .elementor-heading-title{color:#515151;font-size:2.2em;}.elementor-5 .elementor-element.elementor-element-e4a873b .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-ae2f778 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-44abe74 .elementor-button .elementor-align-icon-right{margin-left:13px;}.elementor-5 .elementor-element.elementor-element-44abe74 .elementor-button .elementor-align-icon-left{margin-right:13px;}.elementor-5 .elementor-element.elementor-element-44abe74 a.elementor-button, .elementor-5 .elementor-element.elementor-element-44abe74 .elementor-button{font-size:17px;font-family:"Roboto", Sans-serif;font-weight:400;text-transform:uppercase;background-color:#2185f5;border-radius:8px 8px 8px 8px;padding:15px 37px 15px 37px;}.elementor-5 .elementor-element.elementor-element-44abe74 a.elementor-button:hover, .elementor-5 .elementor-element.elementor-element-44abe74 .elementor-button:hover{color:#2185f5;background-color:rgba(255,255,255,0);border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-44abe74 .elementor-button{border-style:solid;border-width:2px 2px 2px 2px;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-44abe74 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-1be1a9a{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-1be1a9a > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-75facbf > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-75facbf > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-f9017aa .elementor-heading-title{color:#2185f5;}.elementor-5 .elementor-element.elementor-element-f9017aa .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-d29cd9f .elementor-icon-list-icon i{color:#2185f5;font-size:35px;}.elementor-5 .elementor-element.elementor-element-d29cd9f .elementor-icon-list-icon{width:35px;}.elementor-5 .elementor-element.elementor-element-d29cd9f .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-76ad378 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-76ad378 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-e102422 .elementor-heading-title{color:#2185f5;}.elementor-5 .elementor-element.elementor-element-e102422 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-a89efd6 .elementor-icon-list-icon i{color:#2185f5;font-size:35px;}.elementor-5 .elementor-element.elementor-element-a89efd6 .elementor-icon-list-icon{width:35px;}.elementor-5 .elementor-element.elementor-element-a89efd6 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-63577f3{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-63577f3 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-4a2c44c > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-4a2c44c > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-610e74a .elementor-button .elementor-align-icon-right{margin-left:13px;}.elementor-5 .elementor-element.elementor-element-610e74a .elementor-button .elementor-align-icon-left{margin-right:13px;}.elementor-5 .elementor-element.elementor-element-610e74a a.elementor-button, .elementor-5 .elementor-element.elementor-element-610e74a .elementor-button{font-size:17px;font-family:"Roboto", Sans-serif;font-weight:400;text-transform:uppercase;background-color:#2185f5;border-radius:8px 8px 8px 8px;padding:15px 37px 15px 37px;}.elementor-5 .elementor-element.elementor-element-610e74a a.elementor-button:hover, .elementor-5 .elementor-element.elementor-element-610e74a .elementor-button:hover{color:#2185f5;background-color:rgba(255,255,255,0);border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-610e74a .elementor-button{border-style:solid;border-width:2px 2px 2px 2px;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-610e74a .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-1a9e9d4 .elementor-heading-title{color:#2185f5;}.elementor-5 .elementor-element.elementor-element-1a9e9d4 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-c2d0f81 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-ecf9634 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-3d6271b .elementor-heading-title{color:#1e1e1e;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-3d6271b .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5203723 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-d581fda .elementor-heading-title{color:#1e1e1e;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-d581fda .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-7e71783 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-f5b17d1 .elementor-heading-title{color:#1e1e1e;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-f5b17d1 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-ea94ec3 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-3e3d8c1b > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-3e3d8c1b{background-color:#eeeeee;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:90px 0px 90px 0px;}.elementor-5 .elementor-element.elementor-element-3e3d8c1b > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-469e8a46 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-469e8a46 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5ed3b529 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-4c5a039{text-align:center;}.elementor-5 .elementor-element.elementor-element-4c5a039 .elementor-heading-title{color:#4c4c4c;font-size:39px;font-weight:400;text-transform:uppercase;}.elementor-5 .elementor-element.elementor-element-4c5a039 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-a84c2f0 .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-a84c2f0{color:#878787;font-size:17px;font-weight:300;}.elementor-5 .elementor-element.elementor-element-a84c2f0 > .elementor-widget-container{padding:0% 15% 0% 15%;}.elementor-5 .elementor-element.elementor-element-a84c2f0 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-636bc62b .elementor-spacer-inner{height:20px;}.elementor-5 .elementor-element.elementor-element-636bc62b .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-626ff67 > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-626ff67{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-626ff67 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5c9c81f2 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5c9c81f2 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-front{border-radius:10px 10px 10px 10px;background-color:#ffffff;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-back{border-radius:10px 10px 10px 10px;background-color:#4054b2;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-inner,
+					.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-inner .pt-flip-box-front,
+					.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-inner .pt-flip-box-back{height:350px;}.elementor-5 .elementor-element.elementor-element-5f20634d .front-icon-title{line-height:0.1em;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-front p{color:#4c4c4c;line-height:2.2em;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-front .icon-wrapper i{color:#4c4c4c;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-front .icon-wrapper img{width:100px;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-front .icon-wrapper i,
+					.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-front .icon-wrapper img{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-5f20634d .back-icon-title{color:#FFF;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-back p{color:#FFF;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-back .icon-wrapper i{color:#FFF;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-back .icon-wrapper img{width:100px;}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-back .icon-wrapper i,
+					.elementor-5 .elementor-element.elementor-element-5f20634d .pt-flip-box-back .icon-wrapper img{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-5f20634d .pt-fb-button{color:#4054b2;background-color:#ffffff;border-radius:50px 50px 50px 50px;padding:17px 50px 17px 50px;}.elementor-5 .elementor-element.elementor-element-5f20634d > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-5f20634d .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-346abb66 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-346abb66 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-front{border-radius:10px 10px 10px 10px;background-color:#ffffff;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-back{border-radius:10px 10px 10px 10px;background-color:#4054b2;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-inner,
+					.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-inner .pt-flip-box-front,
+					.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-inner .pt-flip-box-back{height:350px;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-front p{color:#4c4c4c;line-height:2.2em;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-front .icon-wrapper i{color:#4c4c4c;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-front .icon-wrapper img{width:100px;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-front .icon-wrapper i,
+					.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-front .icon-wrapper img{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-24a3852f .back-icon-title{color:#FFF;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-back p{color:#FFF;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-back .icon-wrapper i{color:#FFF;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-back .icon-wrapper img{width:100px;}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-back .icon-wrapper i,
+					.elementor-5 .elementor-element.elementor-element-24a3852f .pt-flip-box-back .icon-wrapper img{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-24a3852f .pt-fb-button{color:#4054b2;background-color:#ffffff;border-radius:50px 50px 50px 50px;padding:17px 50px 17px 50px;}.elementor-5 .elementor-element.elementor-element-24a3852f .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-51d44bd5 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-51d44bd5 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-front{border-radius:10px 10px 10px 10px;background-color:#ffffff;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-back{border-radius:10px 10px 10px 10px;background-color:#4054b2;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-inner,
+					.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-inner .pt-flip-box-front,
+					.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-inner .pt-flip-box-back{height:350px;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-front p{color:#4c4c4c;line-height:2.2em;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-front .icon-wrapper i{color:#4c4c4c;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-front .icon-wrapper img{width:100px;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-front .icon-wrapper i,
+					.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-front .icon-wrapper img{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-a92d2c3 .back-icon-title{color:#FFF;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-back p{color:#FFF;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-back .icon-wrapper i{color:#FFF;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-back .icon-wrapper img{width:100px;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-back .icon-wrapper i,
+					.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-flip-box-back .icon-wrapper img{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-a92d2c3 .pt-fb-button{color:#4054b2;background-color:#ffffff;border-radius:50px 50px 50px 50px;padding:17px 50px 17px 50px;}.elementor-5 .elementor-element.elementor-element-a92d2c3 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-231dcb7a > .elementor-container{max-width:1140px;min-height:650px;}.elementor-5 .elementor-element.elementor-element-231dcb7a{background-image:url("wp-content/uploads/2017/12/smart-watch1-1.png");background-position:bottom left;background-repeat:no-repeat;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:100px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-231dcb7a > .elementor-background-overlay{opacity:1;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-69c0396e > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-69c0396e > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-7b12142d > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-7b12142d > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-702ebe .elementor-heading-title{color:#000000;font-size:31px;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-702ebe > .elementor-widget-container{padding:0px 0px 30px 0px;}.elementor-5 .elementor-element.elementor-element-702ebe .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-3da0a5fb > .elementor-container{max-width:912px;}.elementor-5 .elementor-element.elementor-element-3da0a5fb{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-3da0a5fb > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-47c1bde > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-47c1bde > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-2d92308 .elementor-icon-wrapper{text-align:left;}.elementor-5 .elementor-element.elementor-element-2d92308.elementor-view-stacked .elementor-icon{background-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-2d92308.elementor-view-framed .elementor-icon, .elementor-5 .elementor-element.elementor-element-2d92308.elementor-view-default .elementor-icon{color:#2185f5;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-2d92308 .elementor-icon{font-size:40px;}.elementor-5 .elementor-element.elementor-element-2d92308 .elementor-icon i{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-2d92308 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-79345ed9 .elementor-heading-title{color:#000000;font-size:20px;font-family:"Roboto", Sans-serif;line-height:2em;}.elementor-5 .elementor-element.elementor-element-79345ed9 > .elementor-widget-container{margin:0px 0px -10px 0px;}.elementor-5 .elementor-element.elementor-element-79345ed9 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-66d8dcfe{color:#262626;font-size:17px;font-weight:300;line-height:1.8em;}.elementor-5 .elementor-element.elementor-element-66d8dcfe .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-47d9a423 .elementor-icon-wrapper{text-align:left;}.elementor-5 .elementor-element.elementor-element-47d9a423.elementor-view-stacked .elementor-icon{background-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-47d9a423.elementor-view-framed .elementor-icon, .elementor-5 .elementor-element.elementor-element-47d9a423.elementor-view-default .elementor-icon{color:#2185f5;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-47d9a423 .elementor-icon{font-size:40px;}.elementor-5 .elementor-element.elementor-element-47d9a423 .elementor-icon i{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-47d9a423 > .elementor-widget-container{padding:020px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-47d9a423 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-10ecc3a3 .elementor-heading-title{color:#000000;font-size:20px;font-family:"Roboto", Sans-serif;line-height:2em;}.elementor-5 .elementor-element.elementor-element-10ecc3a3 > .elementor-widget-container{margin:0px 0px -10px 0px;}.elementor-5 .elementor-element.elementor-element-10ecc3a3 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5a8011c0{color:#262626;font-size:17px;font-weight:300;line-height:1.8em;}.elementor-5 .elementor-element.elementor-element-5a8011c0 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-17b9efe5 > .elementor-element-populated, .elementor-5 .elementor-element.elementor-element-17b9efe5 > .elementor-element-populated > .elementor-background-overlay{border-radius:0px 50px 0px 0px;}.elementor-5 .elementor-element.elementor-element-17b9efe5 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-17b9efe5 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-27900d46 .elementor-icon-wrapper{text-align:left;}.elementor-5 .elementor-element.elementor-element-27900d46.elementor-view-stacked .elementor-icon{background-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-27900d46.elementor-view-framed .elementor-icon, .elementor-5 .elementor-element.elementor-element-27900d46.elementor-view-default .elementor-icon{color:#2185f5;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-27900d46 .elementor-icon{font-size:40px;}.elementor-5 .elementor-element.elementor-element-27900d46 .elementor-icon i{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-27900d46 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-742046ae .elementor-heading-title{color:#000000;font-size:20px;font-family:"Roboto", Sans-serif;line-height:2em;}.elementor-5 .elementor-element.elementor-element-742046ae > .elementor-widget-container{margin:0px 0px -10px 0px;}.elementor-5 .elementor-element.elementor-element-742046ae .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-35e70f6f{color:#262626;font-size:17px;font-weight:300;line-height:1.8em;}.elementor-5 .elementor-element.elementor-element-35e70f6f .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2fa70d84 .elementor-icon-wrapper{text-align:left;}.elementor-5 .elementor-element.elementor-element-2fa70d84.elementor-view-stacked .elementor-icon{background-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-2fa70d84.elementor-view-framed .elementor-icon, .elementor-5 .elementor-element.elementor-element-2fa70d84.elementor-view-default .elementor-icon{color:#2185f5;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-2fa70d84 .elementor-icon{font-size:40px;}.elementor-5 .elementor-element.elementor-element-2fa70d84 .elementor-icon i{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-2fa70d84 > .elementor-widget-container{padding:20px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-2fa70d84 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-787ff3a5 .elementor-heading-title{color:#000000;font-size:20px;font-family:"Roboto", Sans-serif;line-height:2em;}.elementor-5 .elementor-element.elementor-element-787ff3a5 > .elementor-widget-container{margin:0px 0px -10px 0px;}.elementor-5 .elementor-element.elementor-element-787ff3a5 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-e42c129{color:#262626;font-size:17px;font-weight:300;line-height:1.8em;}.elementor-5 .elementor-element.elementor-element-e42c129 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-32322f8{background-color:#2185f5;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:60px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-32322f8 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-134b66da > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-134b66da > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-3d0ea994{text-align:center;}.elementor-5 .elementor-element.elementor-element-3d0ea994 .elementor-heading-title{color:#ffffff;font-size:40px;font-family:"Montserrat Alternates", Sans-serif;}.elementor-5 .elementor-element.elementor-element-3d0ea994 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2a99ae4 > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-2a99ae4{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:30px 0px 100px 0px;}.elementor-5 .elementor-element.elementor-element-2a99ae4 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-170ef6c.elementor-column .elementor-column-wrap{align-items:flex-end;}.elementor-5 .elementor-element.elementor-element-170ef6c > .elementor-element-populated{background-color:#ffffff;box-shadow:0px 0px 50px 0px rgba(15,15,43,0.58);transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin:15px 15px 15px 15px;padding:60px 30px 60px 30px;}.elementor-5 .elementor-element.elementor-element-170ef6c > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5aed1aca{text-align:center;}.elementor-5 .elementor-element.elementor-element-5aed1aca .elementor-image img{max-width:70%;opacity:1;}.elementor-5 .elementor-element.elementor-element-5aed1aca .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-317152b8 .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-317152b8{color:#353535;font-size:15px;font-weight:300;line-height:2.1em;}.elementor-5 .elementor-element.elementor-element-317152b8 > .elementor-widget-container{padding:10px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-317152b8 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-462be2b2{text-align:center;}.elementor-5 .elementor-element.elementor-element-462be2b2 .elementor-heading-title{color:#000000;font-size:17px;font-weight:600;text-transform:uppercase;}.elementor-5 .elementor-element.elementor-element-462be2b2 > .elementor-widget-container{padding:10px 0px 10px 0px;}.elementor-5 .elementor-element.elementor-element-462be2b2 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2a81e2d1.elementor-column .elementor-column-wrap{align-items:flex-end;}.elementor-5 .elementor-element.elementor-element-2a81e2d1 > .elementor-element-populated{background-color:#ffffff;box-shadow:0px 0px 50px 0px rgba(15,15,43,0.65);transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin:15px 15px 15px 15px;padding:60px 30px 60px 30px;}.elementor-5 .elementor-element.elementor-element-2a81e2d1 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-1b1f855{text-align:center;}.elementor-5 .elementor-element.elementor-element-1b1f855 .elementor-image img{max-width:70%;opacity:1;}.elementor-5 .elementor-element.elementor-element-1b1f855 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-432c474d .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-432c474d{color:#353535;font-size:15px;font-weight:300;line-height:2.1em;}.elementor-5 .elementor-element.elementor-element-432c474d > .elementor-widget-container{padding:10px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-432c474d .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-253466a7{text-align:center;}.elementor-5 .elementor-element.elementor-element-253466a7 .elementor-heading-title{color:#000000;font-size:17px;font-weight:600;text-transform:uppercase;}.elementor-5 .elementor-element.elementor-element-253466a7 > .elementor-widget-container{padding:10px 0px 10px 0px;}.elementor-5 .elementor-element.elementor-element-253466a7 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-9eec41f > .elementor-element-populated{background-color:#ffffff;box-shadow:0px 0px 50px 0px rgba(15,15,43,0.66);transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin:15px 15px 15px 15px;padding:60px 30px 60px 30px;}.elementor-5 .elementor-element.elementor-element-9eec41f > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-202e8ab1{text-align:center;}.elementor-5 .elementor-element.elementor-element-202e8ab1 .elementor-image img{max-width:70%;opacity:1;}.elementor-5 .elementor-element.elementor-element-202e8ab1 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2396c25 .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-2396c25{color:#353535;font-size:15px;font-weight:300;line-height:2.1em;}.elementor-5 .elementor-element.elementor-element-2396c25 > .elementor-widget-container{padding:10px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-2396c25 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-107243d1{text-align:center;}.elementor-5 .elementor-element.elementor-element-107243d1 .elementor-heading-title{color:#000000;font-size:17px;font-weight:600;text-transform:uppercase;}.elementor-5 .elementor-element.elementor-element-107243d1 > .elementor-widget-container{padding:10px 0px 10px 0px;}.elementor-5 .elementor-element.elementor-element-107243d1 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-54d8c836 > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-54d8c836{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:50px 50px 50px 50px;}.elementor-5 .elementor-element.elementor-element-54d8c836 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-3c3eaa5 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-3c3eaa5 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5fa126db{text-align:center;}.elementor-5 .elementor-element.elementor-element-5fa126db .elementor-heading-title{color:#000000;font-size:40px;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-5fa126db > .elementor-widget-container{padding:0px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-5fa126db .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-1edd0ba1 > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-1edd0ba1{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-1edd0ba1 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-3822d050 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-3822d050 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-3b9ff3e2{text-align:center;}.elementor-5 .elementor-element.elementor-element-3b9ff3e2 .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-3b9ff3e2 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-6b470166 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-6b470166 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-1588364b{text-align:center;}.elementor-5 .elementor-element.elementor-element-1588364b .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-1588364b .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-23caf774 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-23caf774 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-30a2c3f6{text-align:center;}.elementor-5 .elementor-element.elementor-element-30a2c3f6 .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-30a2c3f6 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-6e4369f1 > .elementor-element-populated, .elementor-5 .elementor-element.elementor-element-6e4369f1 > .elementor-element-populated > .elementor-background-overlay{border-radius:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-6e4369f1 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-6e4369f1 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-300f14c{text-align:center;}.elementor-5 .elementor-element.elementor-element-300f14c .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-300f14c .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-206f7c7f > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-206f7c7f{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-206f7c7f > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-2b521385 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2b521385 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-261ebcc6{text-align:center;}.elementor-5 .elementor-element.elementor-element-261ebcc6 .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-261ebcc6 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-57900f7e > .elementor-element-populated, .elementor-5 .elementor-element.elementor-element-57900f7e > .elementor-element-populated > .elementor-background-overlay{border-radius:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-57900f7e > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-57900f7e > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-79ca266b{text-align:center;}.elementor-5 .elementor-element.elementor-element-79ca266b .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-79ca266b .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-7b3b15d7 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-7b3b15d7 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-717df637{text-align:center;}.elementor-5 .elementor-element.elementor-element-717df637 .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-717df637 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-34aa3d85 > .elementor-element-populated, .elementor-5 .elementor-element.elementor-element-34aa3d85 > .elementor-element-populated > .elementor-background-overlay{border-radius:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-34aa3d85 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-34aa3d85 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-594207d4{text-align:center;}.elementor-5 .elementor-element.elementor-element-594207d4 .elementor-image img{max-width:100%;opacity:1;}.elementor-5 .elementor-element.elementor-element-594207d4 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-440289a2 > .elementor-container{max-width:968px;}.elementor-5 .elementor-element.elementor-element-440289a2{background-image:url("wp-content/uploads/2017/12/cover-pic-1.png");background-repeat:no-repeat;background-size:cover;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:0px 0px 190px 0px;}.elementor-5 .elementor-element.elementor-element-440289a2 > .elementor-background-overlay{background-color:#1b1b24;opacity:0.5;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-140fe69b > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-140fe69b > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-698277e2 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-698277e2.elementor-view-stacked .elementor-icon{background-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-698277e2.elementor-view-framed .elementor-icon, .elementor-5 .elementor-element.elementor-element-698277e2.elementor-view-default .elementor-icon{color:#2185f5;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-698277e2 .elementor-icon{font-size:70px;}.elementor-5 .elementor-element.elementor-element-698277e2 .elementor-icon i{transform:rotate(0deg);}.elementor-5 .elementor-element.elementor-element-698277e2 > .elementor-widget-container{padding:0130px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-698277e2 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5b250afd .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-5b250afd{color:#ffffff;font-size:27px;font-family:"Roboto", Sans-serif;font-weight:300;line-height:1.7em;}.elementor-5 .elementor-element.elementor-element-5b250afd .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-085518a{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-085518a > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-f21c43b > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-f21c43b > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-b0e0f82{text-align:center;}.elementor-5 .elementor-element.elementor-element-b0e0f82 .elementor-heading-title{color:#3a3a3a;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-b0e0f82 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-f4b0fed .elementor-button .elementor-align-icon-right{margin-left:13px;}.elementor-5 .elementor-element.elementor-element-f4b0fed .elementor-button .elementor-align-icon-left{margin-right:13px;}.elementor-5 .elementor-element.elementor-element-f4b0fed a.elementor-button, .elementor-5 .elementor-element.elementor-element-f4b0fed .elementor-button{font-size:17px;font-family:"Roboto", Sans-serif;font-weight:400;text-transform:uppercase;background-color:#2185f5;border-radius:8px 8px 8px 8px;padding:15px 37px 15px 37px;}.elementor-5 .elementor-element.elementor-element-f4b0fed a.elementor-button:hover, .elementor-5 .elementor-element.elementor-element-f4b0fed .elementor-button:hover{color:#2185f5;background-color:rgba(255,255,255,0);border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-f4b0fed .elementor-button{border-style:solid;border-width:2px 2px 2px 2px;border-color:#2185f5;}.elementor-5 .elementor-element.elementor-element-f4b0fed .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-823ffd8{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-823ffd8 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-7d884eb > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-7d884eb > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-450f0be iframe{height:333px;}.elementor-5 .elementor-element.elementor-element-450f0be .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-46680f7 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-46680f7 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-596a53d .elementor-heading-title{color:#5b5b5b;}.elementor-5 .elementor-element.elementor-element-596a53d .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-dd5a0d3 .elementor-icon-list-item:not(:last-child){padding-bottom:calc(10px/2);}.elementor-5 .elementor-element.elementor-element-dd5a0d3 .elementor-icon-list-item:not(:first-child){margin-top:calc(10px/2);}.elementor-5 .elementor-element.elementor-element-dd5a0d3 .elementor-icon-list-icon i{color:#969696;font-size:30px;}.elementor-5 .elementor-element.elementor-element-dd5a0d3 .elementor-icon-list-icon{width:30px;}.elementor-5 .elementor-element.elementor-element-dd5a0d3 .elementor-icon-list-text{padding-left:18px;}.elementor-5 .elementor-element.elementor-element-dd5a0d3 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-52d7850d > .elementor-container{max-width:1140px;}.elementor-5 .elementor-element.elementor-element-52d7850d{background-color:#2185f5;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:60px 0px 50px 0px;}.elementor-5 .elementor-element.elementor-element-52d7850d > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-5ec78c55 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-5ec78c55 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-22a8e8a4 .elementor-heading-title{color:#ffffff;font-size:21px;font-family:"Nunito Sans", Sans-serif;}.elementor-5 .elementor-element.elementor-element-22a8e8a4 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-14362e76{color:#ffffff;font-size:16px;font-weight:100;line-height:1.9em;}.elementor-5 .elementor-element.elementor-element-14362e76 .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-75fa95e8 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-75fa95e8 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-5 .elementor-element.elementor-element-ed4fb6a .elementor-heading-title{color:#ffffff;font-size:21px;font-family:"Montserrat Alternates", Sans-serif;}.elementor-5 .elementor-element.elementor-element-ed4fb6a .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-5 .elementor-element.elementor-element-2a6a04d .elementor-icon-list-icon i{color:#ffffff;font-size:15px;}.elementor-5 .elementor-element.elementor-element-2a6a04d .elementor-icon-list-icon{width:15px;}.elementor-5 .elementor-element.elementor-element-2a6a04d .elementor-icon-list-text{padding-left:12px;color:#ffffff;}.elementor-5 .elementor-element.elementor-element-2a6a04d .elementor-icon-list-item{font-size:15px;font-weight:300;line-height:2em;}.elementor-5 .elementor-element.elementor-element-2a6a04d .elementor-widget-container{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}@media(max-width:1024px){.elementor-5 .elementor-element.elementor-element-4699b4f .elementor-heading-title{font-size:30px;letter-spacing:1.2px;}.elementor-5 .elementor-element.elementor-element-636bc62b .elementor-spacer-inner{height:50px;}.elementor-5 .elementor-element.elementor-element-231dcb7a{padding:70px 0px 650px 0px;}.elementor-5 .elementor-element.elementor-element-2d92308 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-47d9a423 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-27900d46 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-2fa70d84 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-32322f8{padding:50px 30px 0px 30px;}.elementor-5 .elementor-element.elementor-element-170ef6c > .elementor-element-populated{margin:15px 15px 15px 15px;padding:30px 20px 30px 20px;}.elementor-5 .elementor-element.elementor-element-5aed1aca{text-align:center;}.elementor-5 .elementor-element.elementor-element-317152b8{font-size:14px;}.elementor-5 .elementor-element.elementor-element-317152b8 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-2a81e2d1 > .elementor-element-populated{padding:30px 20px 30px 20px;}.elementor-5 .elementor-element.elementor-element-1b1f855{text-align:center;}.elementor-5 .elementor-element.elementor-element-432c474d{font-size:14px;}.elementor-5 .elementor-element.elementor-element-432c474d > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-9eec41f > .elementor-element-populated{padding:30px 20px 30px 20px;}.elementor-5 .elementor-element.elementor-element-202e8ab1{text-align:center;}.elementor-5 .elementor-element.elementor-element-2396c25{font-size:14px;}.elementor-5 .elementor-element.elementor-element-2396c25 > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-3b9ff3e2{text-align:center;}.elementor-5 .elementor-element.elementor-element-1588364b{text-align:center;}.elementor-5 .elementor-element.elementor-element-30a2c3f6{text-align:center;}.elementor-5 .elementor-element.elementor-element-300f14c{text-align:center;}.elementor-5 .elementor-element.elementor-element-261ebcc6{text-align:center;}.elementor-5 .elementor-element.elementor-element-79ca266b{text-align:center;}.elementor-5 .elementor-element.elementor-element-717df637{text-align:center;}.elementor-5 .elementor-element.elementor-element-594207d4{text-align:center;}.elementor-5 .elementor-element.elementor-element-440289a2{padding:80px 0px 80px 0px;}.elementor-5 .elementor-element.elementor-element-698277e2 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-698277e2 > .elementor-widget-container{padding:0px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-5b250afd{font-size:25px;}.elementor-5 .elementor-element.elementor-element-5b250afd > .elementor-widget-container{padding:0px 50px 0px 50px;}.elementor-5 .elementor-element.elementor-element-52d7850d{padding:0px 30px 0px 30px;}}@media(min-width:768px){.elementor-5 .elementor-element.elementor-element-65f06100{background-attachment:fixed;}.elementor-5 .elementor-element.elementor-element-8476e37{width:29.123%;}.elementor-5 .elementor-element.elementor-element-0f2f795{width:70.877%;}.elementor-5 .elementor-element.elementor-element-d6e446a{background-attachment:fixed;}.elementor-5 .elementor-element.elementor-element-69c0396e{width:38.667%;}.elementor-5 .elementor-element.elementor-element-7b12142d{width:61.334%;}}@media(max-width:767px){.elementor-5 .elementor-element.elementor-element-65f06100{margin-top:0px;margin-bottom:0px;padding:0px 0px 26px 0px;}.elementor-5 .elementor-element.elementor-element-6ea435a{font-size:13px;}.elementor-5 .elementor-element.elementor-element-6ea435a > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-4699b4f .elementor-heading-title{font-size:21px;letter-spacing:1.3px;}.elementor-5 .elementor-element.elementor-element-4699b4f > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-5d024363{margin-top:0px;margin-bottom:0px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-7d00649b > .elementor-element-populated{padding:0px 0px 50px 0px;}.elementor-5 .elementor-element.elementor-element-5040a59d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-28cfea7b > .elementor-element-populated{margin:-26px -0px -0px -0px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-23c3773b a.elementor-button, .elementor-5 .elementor-element.elementor-element-23c3773b .elementor-button{font-size:14px;}.elementor-5 .elementor-element.elementor-element-23c3773b > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-085ea9f .elementor-toggle .elementor-tab-title{font-size:14px;}.elementor-5 .elementor-element.elementor-element-085ea9f .elementor-toggle .elementor-tab-content{font-size:14px;}.elementor-5 .elementor-element.elementor-element-d6e446a > .elementor-container{min-height:0px;}.elementor-5 .elementor-element.elementor-element-d6e446a{margin-top:1px;margin-bottom:1px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-d74086d > .elementor-element-populated{padding:33px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-e4a873b .elementor-heading-title{font-size:24px;}.elementor-5 .elementor-element.elementor-element-44abe74 > .elementor-widget-container{margin:0px 0px 27px 0px;}.elementor-5 .elementor-element.elementor-element-636bc62b .elementor-spacer-inner{height:50px;}.elementor-5 .elementor-element.elementor-element-231dcb7a{margin-top:0px;margin-bottom:0px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-702ebe{text-align:center;}.elementor-5 .elementor-element.elementor-element-702ebe > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-3da0a5fb{margin-top:0px;margin-bottom:0px;padding:0px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-2d92308 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-79345ed9{text-align:center;}.elementor-5 .elementor-element.elementor-element-66d8dcfe .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-66d8dcfe > .elementor-widget-container{padding:0px 30px 0px 30px;}.elementor-5 .elementor-element.elementor-element-47d9a423 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-47d9a423 > .elementor-widget-container{padding:30px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-10ecc3a3{text-align:center;}.elementor-5 .elementor-element.elementor-element-5a8011c0 .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-5a8011c0 > .elementor-widget-container{padding:0px 30px 0px 30px;}.elementor-5 .elementor-element.elementor-element-27900d46 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-27900d46 > .elementor-widget-container{padding:30px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-742046ae{text-align:center;}.elementor-5 .elementor-element.elementor-element-35e70f6f .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-35e70f6f > .elementor-widget-container{padding:0px 30px 0px 30px;}.elementor-5 .elementor-element.elementor-element-2fa70d84 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-2fa70d84 > .elementor-widget-container{padding:30px 0px 0px 0px;}.elementor-5 .elementor-element.elementor-element-787ff3a5{text-align:center;}.elementor-5 .elementor-element.elementor-element-e42c129 .elementor-text-editor{text-align:center;}.elementor-5 .elementor-element.elementor-element-e42c129 > .elementor-widget-container{padding:0px 30px 0px 30px;}.elementor-5 .elementor-element.elementor-element-170ef6c > .elementor-element-populated{margin:30px 30px 30px 30px;}.elementor-5 .elementor-element.elementor-element-5aed1aca{text-align:center;}.elementor-5 .elementor-element.elementor-element-2a81e2d1 > .elementor-element-populated{margin:30px 30px 30px 30px;}.elementor-5 .elementor-element.elementor-element-1b1f855{text-align:center;}.elementor-5 .elementor-element.elementor-element-9eec41f > .elementor-element-populated{margin:30px 30px 30px 30px;}.elementor-5 .elementor-element.elementor-element-202e8ab1{text-align:center;}.elementor-5 .elementor-element.elementor-element-3822d050 > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-3b9ff3e2{text-align:center;}.elementor-5 .elementor-element.elementor-element-3b9ff3e2 > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-6b470166 > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-1588364b{text-align:center;}.elementor-5 .elementor-element.elementor-element-1588364b > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-23caf774 > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-30a2c3f6{text-align:center;}.elementor-5 .elementor-element.elementor-element-30a2c3f6 > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-6e4369f1 > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-300f14c{text-align:center;}.elementor-5 .elementor-element.elementor-element-300f14c > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-2b521385 > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-261ebcc6{text-align:center;}.elementor-5 .elementor-element.elementor-element-261ebcc6 > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-57900f7e > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-79ca266b{text-align:center;}.elementor-5 .elementor-element.elementor-element-7b3b15d7 > .elementor-element-populated{padding:20px 0px 20px 0px;}.elementor-5 .elementor-element.elementor-element-717df637{text-align:center;}.elementor-5 .elementor-element.elementor-element-717df637 > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-594207d4{text-align:center;}.elementor-5 .elementor-element.elementor-element-594207d4 > .elementor-widget-container{padding:5px 5px 5px 5px;}.elementor-5 .elementor-element.elementor-element-698277e2 .elementor-icon-wrapper{text-align:center;}.elementor-5 .elementor-element.elementor-element-698277e2 > .elementor-widget-container{padding:50px 0px 30px 0px;}.elementor-5 .elementor-element.elementor-element-5b250afd{font-size:20px;}.elementor-5 .elementor-element.elementor-element-5b250afd > .elementor-widget-container{padding:0px 30px 0px 30px;}.elementor-5 .elementor-element.elementor-element-52d7850d{padding:30px 0px 30px 0px;}.elementor-5 .elementor-element.elementor-element-5ec78c55 > .elementor-element-populated{margin:0px 0px 0px 0px;padding:0px 30px 30px 30px;}.elementor-5 .elementor-element.elementor-element-22a8e8a4{text-align:left;}.elementor-5 .elementor-element.elementor-element-14362e76 .elementor-text-editor{text-align:left;}.elementor-5 .elementor-element.elementor-element-75fa95e8 > .elementor-element-populated{padding:0px 30px 0px 30px;}}
+</style>
+<link rel='stylesheet' id='lae-frontend-styles-css'  href='wp-content/plugins/addons-for-elementor/assets/css/lae-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='lae-widgets-styles-css'  href='wp-content/plugins/addons-for-elementor/assets/css/lae-widgets.css' type='text/css' media='all' />
+<link rel='stylesheet' id='lae-icomoon-styles-css'  href='wp-content/plugins/addons-for-elementor/assets/css/icomoon.css' type='text/css' media='all' />
+<link rel='stylesheet' id='lae-sliders-styles-css'  href='wp-content/plugins/addons-for-elementor/assets/css/sliders.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sjea-fronten-css'  href='wp-content/plugins/sj-elementor-addon/assets/sjea-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-menus-css'  href='wp-content/plugins/navmenu-addon-for-elementor/assets/css/frontend.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gadwpUAEventsData = {"options":{"event_tracking":"1","event_downloads":"zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*","event_bouncerate":0,"aff_tracking":1,"event_affiliates":"\/out\/","hash_tracking":"1","root_domain":"tanzaki.com","event_timeout":100,"event_precision":0,"event_formsubmit":1,"ga_pagescrolldepth_tracking":1}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/google-analytics-dashboard-for-wp/front/js/tracking-analytics-events.js'></script>
+<script type='text/javascript' src='wp-content/plugins/google-analytics-dashboard-for-wp/front/js/tracking-scrolldepth.js'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="index.html%3Fp=5.html" />
+<link rel='shortlink' href='index.html%3Fp=5.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fshop2yqupwku.tanzaki.com%252Fcss-co-ban%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fshop2yqupwku.tanzaki.com%252Fcss-co-ban%252F&amp;format=xml" />
+			<script type="text/javascript">
+    			var ajaxurl = "http:\/\/shop2yqupwku.tanzaki.com\/wp-admin\/admin-ajax.php";      
+    			var ajaxnonce = "5e1b661b48";
+    			var sjea = {"ajaxurl":"http:\/\/shop2yqupwku.tanzaki.com\/wp-admin\/admin-ajax.php"}  			</script><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CRoboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CUbuntu:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CNunito+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CMontserrat+Alternates:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=vietnamese"><!-- BEGIN GADWP v5.1.2.5 Universal Analytics - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-56563313-30', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END GADWP Universal Analytics -->
+<style id="yellow-pencil">
+/*
+	The following CSS generated by Yellow Pencil Plugin.
+	http://waspthemes.com/yellow-pencil
+*/
+.elementor-widget-html table{border-collapse: collapse;margin:60px 0;padding-top:76px;padding-bottom:66px;}.elementor-column-wrap .elementor-widget-wrap .elementor-widget-html .elementor-widget-container table{font-family:'Nunito Sans', sans-serif !important;}.elementor-widget-html thead td{font-size:27px;border-color:#0748ed;border-style:solid;}.elementor-widget-container table tbody tr td{line-height:0normal !important;border-width:1px !important;}.elementor-widget-html tbody td{border-style:solid;padding-bottom:12px;padding-top:12px;padding-right:1px;border-color:#0748ed;}.elementor-widget-container table thead tr td{border-width:1px !important;}.elementor-section-wrap tbody tr td{padding-left:24px;padding-right:1px;}.elementor-section-wrap thead td{padding-right:0px;padding-left:28px;}
+</style>    <style>
+        .container {
+            background:white;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 1380px;
+            margin-right: auto;
+            margin-left: auto
         }
-
-        function getCookie(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-        function dd_mm_yy_tomorrow() {
-            var tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1e3);
-            var dd = tomorrow.getDate();
-            var mm = tomorrow.getMonth() + 1; //January is 0!
-
-            var yyyy = tomorrow.getFullYear();
-            if (dd < 10) {
-                dd = '0' + dd;
-            }
-            if (mm < 10) {
-                mm = '0' + mm;
-            }
-            return dd + '/' + mm + '/' + yyyy;
-        }
-
-    </script>
+    </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav style="    text-transform: uppercase;    border-bottom: 1px solid white;"
-     class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#myPage">
-                <script>document.write(company_name)</script>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">Giới thiệu</a></li>
-                <!--                <li><a href="#services">Dịch vụ</a></li>
-                                <li><a href="#portfolio">Kinh nghiệm</a></li>-->
-                <li><a href="#pricing">Học phí</a></li>
-                <li><a href="#contact">Tư vấn</a></li>
-                <!--<li><a href="http://kipalog.com/">Các bài viết</a></li>-->
-                <!--<li><a href="https://daynhauhoc.com/">Hỏi đáp</a></li>-->
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="">
-    <div class="jumbotron text-center main-section">
-        <h1>
-            Học gì <span>kiếm nhiều tiền</span> <br>
-            <span>Không cần bằng đại học</span> ?
-            <br><br>
-            Khóa lập trình Web sinh viên, người đi làm
-        </h1>
-        <p>
-            Học lập trình, không chỉ kiếm đủ sống mà còn nhiều tiền và được mọi người ngưỡng mộ
-            <br/>
-            <br/>
-            <br/>
-        </p>
-        <form class="form-inline">
-            <p>Đăng ký trước 7h ngày
-                <script>write(dd_mm_yy_tomorrow())</script>
-                ( còn 1 ngày)
-                , học phí chỉ còn 590k
-            </p>
-            <div class="input-group">
-                <!--<input type="text" class="form-control" size="50" placeholder="Nhập Email hoặc số điện thoại" required>-->
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger btn-lg"
-                            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCU7uoLpYEbc15FeiqSX9F4KBCLWvJ8cRt14UYeB9mSrAh1g/viewform?entry.670154567=Click+%C4%91%E1%BB%83+nh%E1%BA%ADp+s%E1%BB%91+%C4%91i%E1%BB%87n+tho%E1%BA%A1i')">
-                        Nhận tư vấn từ chuyên gia
-                    </button>
-                    <a href="#pricing" type="button" class="btn btn-danger btn-lg">
-                        Đọc chi tiết
-                    </a>
-                </div>
-            </div>
-        </form>
-        <p>
-            Hãy để chúng tôi tư vấn và giúp bạn tận dụng cơ hội hiếm có này
-            <br/>
-            Đăng ký học để thay đổi cuộc đời
-        </p>
-    </div>
+<body class="page-template page-template-elementor_boxed page page-id-5 has-navmenu has-megamenu full-width custom-font-enabled single-author elementor-default elementor-page elementor-page-5">
+<div class="container">
 
-    <!-- Container (References Section) -->
-    <div id="references" class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Mọi người nói gì trên</h2>
-                <p>
-                    <script>
-                        [
-                            {
-                                link: 'http://vnexpress.net/tin-tuc/giao-duc/cong-dan-so/tro-thanh-lap-trinh-vien-du-khong-co-bang-dai-hoc-3446484.html',
-                                img: 'http://i.imgur.com/vR4qvUN.png',
-                                text: 'Trở thành lập trình viên dù không có bằng đại học'
-                            },
-                            {
-                                link: 'http://kenh14.vn/top-5-nghe-thu-nhap-hot-trong-nam-2016-20160730191238769.chn',
-                                img: 'http://i.imgur.com/fWT34lX.png',
-                                text: 'Nghề lập trình viên có thu nhập “hot” thứ 2 trong năm 2016.'
-                            },
-                            {
-                                link: 'https://toidicodedao.com/2016/09/22/lap-trinh-vien-co-can-hoc-dai-hoc/',
-                                img: 'http://i.imgur.com/BGCuvqf.png',
-                                text: 'Lập trình viên có cần học đại học không?'
-                            },
-                            {
-                                link: 'http://stanford.com.vn/kien-thuc-lap-trinh/tin-chi-tiet/cagId/27/id/4517/lap-trinh-vien-co-thuc-su-can-bang-cap',
-                                img: 'http://i.imgur.com/ax2qTP9.png',
-                                text: 'Lập trình viên có thật sự cần bằng cấp'
-                            },
-                            {
-                                link: 'https://daynhauhoc.com/t/khong-co-bang-dai-hoc-lieu-co-xin-viec-lap-trinh-duoc/11261',
-                                img: 'http://i.imgur.com/IczFDka.png',
-                                text: 'Không có bằng đại học liệu có xin việc lập trình được không?'
-                            },
-                            {
-                                link: 'http://vieclamit.careerbuilder.vn/advices/lap-trinh-vien-co-can-hoc-dai-hoc-hay-khong.35A4EE0E.html',
-                                img: 'http://i.imgur.com/ANhVHjl.png',
-                                text: 'Lập trình viên có cần học đại học không?'
-                            },
-                            {
-                                link: 'http://ictnews.vn/cntt/luong-trung-binh-nhan-vien-cntt-viet-gan-19-trieu-dong-thang-127570.ict',
-                                img: 'http://i.imgur.com/whdQHIp.png',
-                                text: 'Lương trung bình lập trình viên Việt 19 triệu/tháng'
-                            }
-                        ].map(function (ref) {
-                            write('<a href="' + ref.link + '"><img src="' + ref.img + '" alt=""><span>' + ref.text + '</span></a>');
-                        });
-                    </script>
-                </p>
-                <br>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>Giới thiệu về chúng tôi</h2><br>
-                <h4>Và chúng tôi đã làm được những gì?</h4><br>
-                <p>
-                    Bắt đầu từ 12/2015 với ý tưởng khiến lập trình dễ học hơn và giúp nhiều người hơn có một việc làm
-                    tốt
-                    với nghề lập trình viên.<br/>
-                    Tới 4/2016 chúng tôi đã nghiên cứu, phát triển thành công và khóa học đầu tiên đã giúp học viên nắm
-                    vững kỹ thuật lập trình web với kết quả kiểm tra rất tốt. <br>
-                    Năm 2017, chúng tôi sẽ áp dụng thêm nhiều công thức đã được chứng minh là hiệu quả, giúp người học
-                    nhanh chóng nắm rõ lý thuyết lập trình căn bản và thực hành lập trình thành thạo website.
-                </p>
-                <br>
-                <button class="btn btn-default btn-lg">Nói chuyện trực tiếp với chuyên gia</button>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-signal logo"></span>
-            </div>
-        </div>
-    </div>
+			<div class="elementor elementor-5">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section data-id="65f06100" class="elementor-element elementor-element-65f06100 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section-content-top elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="5d05057e" class="elementor-element elementor-element-5d05057e elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<section data-id="c447a2c" class="elementor-element elementor-element-c447a2c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section-content-middle elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="8476e37" class="elementor-element elementor-element-8476e37 elementor-column elementor-col-50 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="fca7b1c" class="elementor-element elementor-element-fca7b1c elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="http://shop100.vn">Shop100 Training</a></h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="0f2f795" class="elementor-element elementor-element-0f2f795 elementor-column elementor-col-50 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="6ea435a" class="elementor-element elementor-element-6ea435a elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><a href="http://shop100.vn/pro#templates"><span style="color: #ffffff;">Templates</span></a>          <span style="color: #ffffff;"><a style="color: #ffffff;" href="http://shop100.vn/pro">Pro</a></span>         <span style="color: #ffffff;"><a style="color: #ffffff;" href="http://shop100.vn/blog">Blog</a></span>      <span style="color: #ffffff;"><a style="color: #ffffff;" href="http://daotao.shop100.vn/"><span style="text-decoration: underline;">Training</span></a>        <a style="color: #ffffff;" href="https://docs.elementor.com/">API</a></span></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="a94ca2a" class="elementor-element elementor-element-a94ca2a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section-content-middle elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="ffa459e" class="elementor-element elementor-element-ffa459e elementor-column elementor-col-100 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="4699b4f" class="elementor-element elementor-element-4699b4f elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-large">Khóa học thiết kế web với CSS trong 2 tuần<br>Cho người mới bắt đầu</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="5d024363" class="elementor-element elementor-element-5d024363 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div data-id="7d00649b" class="elementor-element elementor-element-7d00649b elementor-column elementor-col-50 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="5040a59d" class="elementor-element elementor-element-5040a59d elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="index.html%3Fp=5.html#more" class="elementor-button-link elementor-button elementor-size-sm">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">xem chi tiết</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="28cfea7b" class="elementor-element elementor-element-28cfea7b elementor-column elementor-col-50 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="23c3773b" class="elementor-element elementor-element-23c3773b elementor-mobile-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSe1_nrADDfR6gEA2hWYi3uG1cGd-ffYomkeAm6Zq4GDzfEPvg/viewform?usp=sf_link" class="elementor-button-link elementor-button elementor-size-sm">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">đăng ký ngay với 200.000đ</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="2688853" class="elementor-element elementor-element-2688853 elementor-section-boxed elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="6bc0ac2" class="elementor-element elementor-element-6bc0ac2 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="c3d08db" class="elementor-element elementor-element-c3d08db elementor-widget elementor-widget-menu-anchor" data-element_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+					<div id="more" class="elementor-menu-anchor"></div>
+				</div>
+				</div>
+				<div data-id="637b838" class="elementor-element elementor-element-637b838 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Chương trình học</h2>		</div>
+				</div>
+				<div data-id="085ea9f" class="elementor-element elementor-element-085ea9f elementor-widget elementor-widget-toggle" data-element_type="toggle.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-toggle">
+										<div class="elementor-tab-title" tabindex="8771" data-tab="1">
+					<span class="elementor-toggle-icon">
+						<i class="fa"></i>
+					</span>
+					Buổi 1: HTML5 cơ bản				</div>
+				<div class="elementor-tab-content elementor-clearfix" data-tab="1"><ul><li>Giao lưu và tìm hiểu lớp học</li><li>Tìm hiểu HTML?</li><li>Một vài element HTML5 thông dụng</li></ul></div>
+							<div class="elementor-tab-title" tabindex="8772" data-tab="2">
+					<span class="elementor-toggle-icon">
+						<i class="fa"></i>
+					</span>
+					Buổi 1.1: Sơ lược về HTML and CSS				</div>
+				<div class="elementor-tab-content elementor-clearfix" data-tab="2"><ol><li>Các ngôn ngữ lập trình web</li><li>Cấu trúc trang web dựa trên HTML</li><li>Cú pháp chi tiết HTML</li><li>Cấu trúc HTML</li><li>Đặt ảnh trên web</li><li>Vai trò của CSS</li><li>Style heading</li><li>Hiểu về class</li><li>Khai báo style trong trang web</li><li>Khai báo internal hay external style</li><li>Tạo external style</li><li>Xếp chồng và kế thừa</li></ol></div>
+							<div class="elementor-tab-title" tabindex="8773" data-tab="3">
+					<span class="elementor-toggle-icon">
+						<i class="fa"></i>
+					</span>
+					Buổi 2: Định dạng văn bản bằng CSS				</div>
+				<div class="elementor-tab-content elementor-clearfix" data-tab="3"><ol><li>Typography - thành phần rất quan trọng trên website</li><li>Thách thức của font trên website</li><li>Cấu hình font-family</li><li>Thay đổi cỡ chữ bằng CSS</li><li>Đơn vị Pixel và EM trong CSS</li><li>Dùng margin để sửa khoảng cách giữa text</li><li>Line-height trong văn bản</li><li>Làm việc với HTML lists</li><li>Style HTML lists</li></ol></div>
+							<div class="elementor-tab-title" tabindex="8774" data-tab="4">
+					<span class="elementor-toggle-icon">
+						<i class="fa"></i>
+					</span>
+					Buổi 2.2: Giới thiệu về bố cục CSS				</div>
+				<div class="elementor-tab-content elementor-clearfix" data-tab="4"><ol><li>Tổng quan bố cục website, một số bố cục hay dùng</li><li>Hiểu thuộc tính float</li><li>Tạo bố cục 2 cột sử dụng thẻ<div> </div></li><li>Làm việc với <strong>clear</strong></li><li>Sử dụng margin và padding để style cho layout website</li></ol></div>
+							<div class="elementor-tab-title" tabindex="8775" data-tab="5">
+					<span class="elementor-toggle-icon">
+						<i class="fa"></i>
+					</span>
+					Buổi 3: Layout HTML nâng cao				</div>
+				<div class="elementor-tab-content elementor-clearfix" data-tab="5"><ol><li>Tạo layout trang web</li><li>Làm việc với background-image, tạo hiệu ứng parallax</li><li>Responsive khái niệm và cách dùng</li><li>Pseudo selector</li></ol></div>
+							<div class="elementor-tab-title" tabindex="8776" data-tab="6">
+					<span class="elementor-toggle-icon">
+						<i class="fa"></i>
+					</span>
+					Buổi 4: Đưa website lên Internet và tổng kết khóa học				</div>
+				<div class="elementor-tab-content elementor-clearfix" data-tab="6"><ol><li>Tổng kết khóa học</li><li>Đẩy website online trên Internet</li><li>Thực hành viết CV và chữa lỗi CV bị sai</li><li>Thực hành phỏng vấn việc làm thực tế</li><li>Party</li></ol></div>
+					</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="d6e446a" class="elementor-element elementor-element-d6e446a elementor-section-boxed elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="d74086d" class="elementor-element elementor-element-d74086d elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="e4a873b" class="elementor-element elementor-element-e4a873b elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Trở thành Web Developer ngay hôm nay</h2>		</div>
+				</div>
+				<div data-id="ae2f778" class="elementor-element elementor-element-ae2f778 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Và tham gia thị trường Công Nghệ Thông Tin đầy màu mỡ, cơ hội, và tiền bạc.</p></div>
+				</div>
+				</div>
+				<div data-id="44abe74" class="elementor-element elementor-element-44abe74 elementor-align-center elementor-mobile-align-center animated fadeInRight animated-fast elementor-invisible elementor-widget elementor-widget-button" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSe1_nrADDfR6gEA2hWYi3uG1cGd-ffYomkeAm6Zq4GDzfEPvg/viewform?usp=sf_link" class="elementor-button-link elementor-button elementor-size-sm" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-align-icon-right elementor-button-icon">
+				<i class="fa fa-fast-forward"></i>
+			</span>
+						<span class="elementor-button-text">đăng ký ngay</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="1be1a9a" class="elementor-element elementor-element-1be1a9a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="75facbf" class="elementor-element elementor-element-75facbf elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="f9017aa" class="elementor-element elementor-element-f9017aa elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">KHOÁ HỌC CSS GIÚP BẠN</h2>		</div>
+				</div>
+				<div data-id="d29cd9f" class="elementor-element elementor-element-d29cd9f elementor-widget elementor-widget-icon-list" data-element_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Cung cấp kiến thức CSS toàn diện trong thiết kế web như Font chữ, bố cục, màu sắc,..</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Thiết kế những ấn phẩm truyền thông như LandingPage, Popup, Website,.. cho doanh nghiệp của bạn.</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Tự làm chiếc CV online "lấy lòng" nhà tuyển dụng.</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Tất nhiên, không thể thiếu, bạn sẽ nhận được chứng chỉ từ Shop100 sau khi hoàn thành khoá học nữa đó!</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="76ad378" class="elementor-element elementor-element-76ad378 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="e102422" class="elementor-element elementor-element-e102422 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CHÍNH SÁCH GIÁ</h2>		</div>
+				</div>
+				<div data-id="a89efd6" class="elementor-element elementor-element-a89efd6 elementor-widget elementor-widget-icon-list" data-element_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Học phí gốc lớp CSS: 200.000đ</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Đăng kí nhóm 2 người chỉ còn 250k</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-check"></i>
+						</span>
+										<span class="elementor-icon-list-text">Đăng kí nhóm 3 người chỉ còn 300k</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-arrow-circle-right"></i>
+						</span>
+										<span class="elementor-icon-list-text">Điều kiện áp dụng các chính sách ưu đãi: Chia sẻ CÔNG KHAI link khóa học lên Facebook</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="63577f3" class="elementor-element elementor-element-63577f3 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="4a2c44c" class="elementor-element elementor-element-4a2c44c elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="610e74a" class="elementor-element elementor-element-610e74a elementor-align-center elementor-mobile-align-center animated fadeInRight animated-fast elementor-invisible elementor-widget elementor-widget-button" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSe1_nrADDfR6gEA2hWYi3uG1cGd-ffYomkeAm6Zq4GDzfEPvg/viewform?usp=sf_link" class="elementor-button-link elementor-button elementor-size-sm" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-align-icon-right elementor-button-icon">
+				<i class="fa fa-fast-forward"></i>
+			</span>
+						<span class="elementor-button-text">đăng ký ngay</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div data-id="1a9e9d4" class="elementor-element elementor-element-1a9e9d4 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PHƯƠNG THỨC NỘP HỌC PHÍ</h2>		</div>
+				</div>
+				<div data-id="c2d0f81" class="elementor-element elementor-element-c2d0f81 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Bạn đăng kí online khóa học trước để giữ chỗ và nhận ưu đãi học phí.</p><p>Sau đó, trong 24h, Shop100 sẽ gọi điện liên hệ với bạn để xác nhận thông tin và hướng dẫn chi tiết cách hoàn thành học phí.</p><p><strong>1. Trực tiếp: </strong><br />Cơ sở Hà Nội: Bạn có thể đến đóng tiền trực tiếp tại Văn phòng Shop100, phòng 203, tầng 2 - Số 185 Chùa Láng, Đống Đa, Hà Nội. Văn phòng làm việc từ 9h sáng đến 9h tối hàng ngày kể cả thứ 7, chủ nhật.</p></div>
+				</div>
+				</div>
+				<div data-id="ecf9634" class="elementor-element elementor-element-ecf9634 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Lưu ý: Các khóa học được BẢO HÀNH TRỌN ĐỜI và BẢO LƯU VÔ THỜI HẠN</p><p>*Học viên vui lòng mang laptop cá nhân theo để thực hành. phần mềm Shop100 sẽ hỗ trợ bạn cài đặt.</p></div>
+				</div>
+				</div>
+				<div data-id="3d6271b" class="elementor-element elementor-element-3d6271b elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Khóa học tháng 1/2018</h2>		</div>
+				</div>
+				<div data-id="5203723" class="elementor-element elementor-element-5203723 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-html" data-element_type="html.default">
+				<div class="elementor-widget-container">
+			<table style="width:100%">
+    <thead>
+        <tr>
+            <td>Lớp</td>
+            <td colspan=2>Thời gian</td>
+            <td>Cơ sở</td>
+            <td>Khai giảng</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                CSS3 Web.33.1
+            </td>
+            <td>
+                Thứ 2 - Thứ 4
+            </td>
+            <td>
+                     19 - 21h
+            </td>
+            <td>
+                185 Chùa Láng
+            </td>
+            <td>
+                08/01/2018
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS3 Web.33.2
+            </td>
+            <td>
+                Thứ 3 - Thứ 5
+            </td>
+            <td>
+                     19 - 21h
+            </td>
+            <td>
+                185 Chùa Láng
+            </td>
+            <td>
+                09/01/2018
+            </td>
+        </tr>
+    </tbody>
+</table>		</div>
+				</div>
+				<div data-id="d581fda" class="elementor-element elementor-element-d581fda elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Khóa học tháng 12</h2>		</div>
+				</div>
+				<div data-id="7e71783" class="elementor-element elementor-element-7e71783 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-html" data-element_type="html.default">
+				<div class="elementor-widget-container">
+			<table style="width:100%">
+    <thead>
+        <tr>
+            <td>Lớp</td>
+            <td colspan=2>Thời gian</td>
+            <td>Cơ sở</td>
+            <td>Khai giảng</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                CSS3 Web.32.1
+            </td>
+            <td>
+                Thứ 3 - Thứ 5
+            </td>
+            <td>
+                     19 - 21h
+            </td>
+            <td>
+                185 Chùa Láng
+            </td>
+            <td>
+                12/12
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS3 Web.32.2
+            </td>
+            <td>
+                Thứ 4 - Thứ 6
+            </td>
+            <td>
+                      19 - 21h
+            </td>
+            <td>
+                185 Chùa Láng
+            </td>
+            <td>
+                13/12
+            </td>
+        </tr>
+    </tbody>
+</table>		</div>
+				</div>
+				<div data-id="f5b17d1" class="elementor-element elementor-element-f5b17d1 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Khóa học tháng 11</h2>		</div>
+				</div>
+				<div data-id="ea94ec3" class="elementor-element elementor-element-ea94ec3 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-html" data-element_type="html.default">
+				<div class="elementor-widget-container">
+			<table style="width:100%" id="table2">
+    <thead>
+        <tr>
+            <td>Lớp</td>
+            <td colspan=2>Thời gian</td>
+            <td>Cơ sở</td>
+            <td>Khai giảng</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                CSS3 Web.32.1
+            </td>
+            <td>
+                Thứ 3 - Thứ 5
+            </td>
+            <td>
+                      19 - 21h
+            </td>
+            <td>
+                185 Chùa Láng
+            </td>
+            <td>
+                28/11
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS3 Web.32.2
+            </td>
+            <td>
+                Thứ 4 - Thứ 6
+            </td>
+            <td>
+                      19 - 21h
+            </td>
+            <td>
+                185 Chùa Láng
+            </td>
+            <td>
+                29/11
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS3 Web.32.3
+            </td>
+            <td>
+                Thứ 3 - Thứ 5
+            </td>
+            <td>
+                      19 - 21h
+            </td>
+            <td>
+                100 Giải Phóng
+            </td>
+            <td>
+                28/11
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS3 Web.32.4
+            </td>
+            <td>
+                Thứ 4 - Thứ 6
+            </td>
+            <td>
+                      19 - 21h
+            </td>
+            <td>
+                100 Giải Phóng
+            </td>
+            <td>
+                29/11
+            </td>
+        </tr>
+        </tbody>
+        </table>
+        		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="3e3d8c1b" class="elementor-element elementor-element-3e3d8c1b elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="469e8a46" class="elementor-element elementor-element-469e8a46 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="5ed3b529" class="elementor-element elementor-element-5ed3b529 elementor-widget elementor-widget-menu-anchor" data-element_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+					<div id="pricing" class="elementor-menu-anchor"></div>
+				</div>
+				</div>
+				<div data-id="4c5a039" class="elementor-element elementor-element-4c5a039 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">khóa học khác</h3>		</div>
+				</div>
+				<div data-id="a84c2f0" class="elementor-element elementor-element-a84c2f0 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Nếu bạn cần tư vấn để chọn khóa học phù hợp, chỉ cần click vào phần "Chat với hỗ trợ viên"</p></div>
+				</div>
+				</div>
+				<div data-id="636bc62b" class="elementor-element elementor-element-636bc62b elementor-widget elementor-widget-spacer" data-element_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section data-id="626ff67" class="elementor-element elementor-element-626ff67 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section-content-middle elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="5c9c81f2" class="elementor-element elementor-element-5c9c81f2 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="5f20634d" class="elementor-element elementor-element-5f20634d pt-fb-animate-horizontal-left-3d elementor-widget elementor-widget-Pt-flipbox" data-element_type="Pt-flipbox.default">
+				<div class="elementor-widget-container">
+					   <div class="pt-flip-box-wrapper">
+			<div class="pt-flip-box-inner">
 
-    <div class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
-            <div class="col-sm-8">
-                <h2>Tầm nhìn và Sứ mệnh</h2><br>
-                <h4><strong>Sứ mệnh:</strong> <br>Nhiều người ước mơ thật lớn, nhưng thời gian họ dành cho ước mơ đó quá
-                    ít...
-                    <br>
-                    Nhiều người lại dành nhiều thời gian cho ước mơ, mà từ bỏ những niềm vui xung quanh mình...
-                    <br>
-                    Xã hội càng lúc càng trọng thực lực, sinh viên thiếu kĩ năng tự ti và thất bại không đứng lên được.
-                    <br>
-                    Có rất nhiều sinh viên, người đi làm thêm, người thất nghiệp đang mong muốn có một công việc ổn định
-                    với mức lương tốt.
-                    <br>
-                    <script>write(company_name);</script>
-                    được sinh ra, mang một sứ mệnh, giúp các bạn trẻ tìm thấy đam mê học hỏi, để hăng say làm việc, tự
-                    tin xin việc và có một công việc tuyệt vời với mức lương cao tương xứng, và sống một cuộc đời hạnh
-                    phúc ý nghĩa.
-                </h4>
-                <br>
-                <p><strong>Tầm nhìn: </strong>
-                    <script>write(company_name)</script>
-                    có tầm nhìn sẽ trở thành nơi đào tạo tin học, lập trình, thiết kế lập trình website, uy tín hàng đầu
-                    tại Hà Nội vào năm 2020
-                </p>
-            </div>
-        </div>
-    </div>
+				<div class="pt-flip-box-front">
+					<div class="flipbox-content">
+																<div class="icon-wrapper pt-fb-icon-view-default pt-fb-icon-shape-circle">
+							<img src='wp-content/uploads/2017/12/1059.png'>
+							</div>
+			
+						
+													<p>
+								<p>Học lập trình máy chủ tạo ra trang web giống Facebook hay Google</p>							</p>
+											</div>
+				</div>
 
-    <!-- Container (Services Section) -->
-    <!--<div id="services" class="container-fluid text-center">
-        <h2>Dịch vụ</h2>
-        <h4>Chúng tôi phục vụ</h4>
-        <br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-off logo-small"></span>
-                <h4>POWER</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-heart logo-small"></span>
-                <h4>LOVE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-lock logo-small"></span>
-                <h4>JOB DONE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
-        <br><br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf logo-small"></span>
-                <h4>GREEN</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate logo-small"></span>
-                <h4>CERTIFIED</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench logo-small"></span>
-                <h4 style="color:#303030;">HARD WORK</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
-    </div>-->
+				<div class="pt-flip-box-back">
+					<div class="flipbox-content">
+																			<div class="icon-wrapper pt-fb-icon-view-default pt-fb-icon-shape-circle">
+							<img src='wp-content/uploads/2017/12/1060.png'>
+							</div>
+												
+													<p>
+								<p>Đăng ký khóa học về PHP bạn sẽ được học thêm kiến thức Database</p><p>Học phí: 500.000đ / tháng</p>							</p>
+						
+													<div class="pt-fb-button-wrapper">
+								<a class="pt-fb-button" href="php.1.html">
+									  <span class="elementor-button-text">Đăng ký ngay</span>
+								</a>
+							</div>
+											</div>
+				</div>
 
-    <!-- Container (Portfolio Section) -->
-    <!--<div id="portfolio" class="container-fluid text-center bg-grey">
-        <h2>Kinh nghiệm</h2><br>
-        <h4>What we have created</h4>
-        <div class="row text-center slideanim">
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="http://www.w3schools.com/bootstrap/paris.jpg" alt="Paris" width="400" height="300">
-                    <p><strong>Paris</strong></p>
-                    <p>Yes, we built Paris</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="http://www.w3schools.com/bootstrap/newyork.jpg" alt="New York" width="400" height="300">
-                    <p><strong>New York</strong></p>
-                    <p>We built New York</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="http://www.w3schools.com/bootstrap/sanfran.jpg" alt="San Francisco" width="400" height="300">
-                    <p><strong>San Francisco</strong></p>
-                    <p>Yes, San Fran is ours</p>
-                </div>
-            </div>
-        </div>
-        <br>
+			</div>
+		   </div>
+					</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="346abb66" class="elementor-element elementor-element-346abb66 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="24a3852f" class="elementor-element elementor-element-24a3852f pt-fb-animate-horizontal-left-3d elementor-widget elementor-widget-Pt-flipbox" data-element_type="Pt-flipbox.default">
+				<div class="elementor-widget-container">
+					   <div class="pt-flip-box-wrapper">
+			<div class="pt-flip-box-inner">
 
-        <h2>What our customers say</h2>
-        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+				<div class="pt-flip-box-front">
+					<div class="flipbox-content">
+																<div class="icon-wrapper pt-fb-icon-view-default pt-fb-icon-shape-circle">
+							<img src='wp-content/uploads/2017/12/1023.png'>
+							</div>
+			
+						
+													<p>
+								<p>Thêm một chút màu sắc trang, đổi màu chữ, thay đổi cấu trúc,…website</p>							</p>
+											</div>
+				</div>
 
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span>
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span>
-                    </h4>
-                </div>
-            </div>
+				<div class="pt-flip-box-back">
+					<div class="flipbox-content">
+																			<div class="icon-wrapper pt-fb-icon-view-default pt-fb-icon-shape-circle">
+							<img src='wp-content/uploads/2017/12/1014.png'>
+							</div>
+												
+													<p>
+								<p>Đăng ký khóa học về CSS bạn sẽ được học thêm kiến thức về HTML</p><p>Học phí: 200.00đ / 2 tuần</p>							</p>
+						
+													<div class="pt-fb-button-wrapper">
+								<a class="pt-fb-button" href="css.html">
+									  <span class="elementor-button-text">Đăng ký ngay</span>
+								</a>
+							</div>
+											</div>
+				</div>
 
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>-->
+			</div>
+		   </div>
+					</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="51d44bd5" class="elementor-element elementor-element-51d44bd5 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="a92d2c3" class="elementor-element elementor-element-a92d2c3 pt-fb-animate-horizontal-left-3d elementor-widget elementor-widget-Pt-flipbox" data-element_type="Pt-flipbox.default">
+				<div class="elementor-widget-container">
+					   <div class="pt-flip-box-wrapper">
+			<div class="pt-flip-box-inner">
 
-    <!-- Container (Pricing Section) -->
-    <div id="pricing" class="container-fluid">
-        <div class="text-center">
-            <h2>Học phí</h2>
-            <h4>Chọn gói học phù hợp với bạn</h4>
-        </div>
-        <div class="row slideanim flex-children">
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Basic</h1>
-                    </div>
-                    <div class="panel-body">
-                        <script>
-                            var write_list_fixed_height = function (t) {
-                                document.write(t.join(''));
-                                for (var i = 1; i <= (12 - t.length); i++) {
-                                    document.write('<p>&nbsp;</p>');
-                                }
-                            };
-                            var basic_plan_html = [
-                                //"<p><strong>850</strong> phút học qua video</p>",
-                                "<p><strong>190</strong> bài kiểm tra</p>",
-                                "<p style='    border-top: 1px dashed #e2e2e2;'>&nbsp;</p>"
-                            ];
-                            var pro_plan_html = [
-                                "<p><strong>Trọn đời</strong> tư vấn học lập trình</p>",
-                                "<p><strong>Trọn đời</strong> tư vấn việc làm</p>",
-                                "<p><strong>Trọn đời</strong> chứng chỉ <span style='color:red'>(*)</span></p>",
-                                "<p style='    border-top: 1px dashed #e2e2e2;'>&nbsp;</p>"
-                            ];
-                            var premium_plan_html = [
-                                "<p><strong>Miễn phí</strong> tư vấn học tiếng Anh chuyên ngành</p>",
-                                '<p><strong>8</strong> buổi học trực tiếp cùng chuyên gia</p>',
-                                //"<p><strong>Tặng miễn phí 350</strong> phút học qua video</p>",
-                                "<p data-toggle='tooltip' title='Học viên được học lại khóa học miễn phí bất cứ lúc nào !'><strong>Không giới hạn</strong> học lại miễn phí</p>",
-                                '<p><strong>Coupon 10% </strong> <code>10PERCENT</code></p>'
-                            ];
-                        </script>
-                        <script>write_list_fixed_height(basic_plan_html)</script>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="strikethrough">
-                            <p>Học phí gốc</p>
-                            <h4>590.000 đ</h4>
-                        </div>
-                        <div class="main-price">
-                            <p class="lead">Chỉ còn</p>
-                            <h3>390.000 đ</h3>
-                        </div>
-                        <a target="_blank" href="https://goo.gl/forms/JzSg3arcSBPOm7Qn1" class="btn btn-lg">Đăng ký</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Pro</h1>
-                    </div>
-                    <div class="panel-body">
-                        <script>write_list_fixed_height(basic_plan_html.concat(pro_plan_html))</script>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="strikethrough">
-                            <p>Học phí gốc</p>
-                            <h4>690.000 đ</h4>
-                        </div>
-                        <div class="main-price">
-                            <p class="lead">Chỉ còn</p>
-                            <h3>580.000 đ</h3>
-                        </div>
-                        <a target="_blank" href="https://goo.gl/forms/JzSg3arcSBPOm7Qn1" class="btn btn-lg">Đăng ký</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Premium</h1>
-                    </div>
-                    <div class="panel-body">
-                        <script>write_list_fixed_height(basic_plan_html.concat(pro_plan_html).concat(premium_plan_html));</script>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="strikethrough">
-                            <p>Học phí gốc</p>
-                            <h4>1.290.000 đ</h4>
-                        </div>
-                        <div class="main-price">
-                            <p class="lead">Chỉ còn</p>
-                            <h3>590.000 đ</h3>
-                        </div>
+				<div class="pt-flip-box-front">
+					<div class="flipbox-content">
+																<div class="icon-wrapper pt-fb-icon-view-default pt-fb-icon-shape-circle">
+							<img src='wp-content/uploads/2017/12/1024.png'>
+							</div>
+			
+						
+													<p>
+								<p>Lập trình và tạo hiệu ứng cho website trên trình duyệt</p>							</p>
+											</div>
+				</div>
 
-                        <a target="_blank" href="https://goo.gl/forms/JzSg3arcSBPOm7Qn1" class="btn btn-lg">Đăng ký</a>
-                        <button class="btn btn-lg"
-                                onclick="if(confirm('Học phí được đóng thành 2 lần, lần đầu 150.000đ đăng ký giữ chỗ, khi muốn đi học bạn sẽ đóng lần hai số tiền còn lại của học phí. Tổng cộng 2 lần đóng tiền chỉ 590.000đ'))window.open('https://goo.gl/forms/JzSg3arcSBPOm7Qn1');"
-                                title="Đăng ký giữ chỗ ngay bây giờ và học sau" data-toggle="tooltip">Giữ chỗ miễn phí
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center">
-            <h2>Khóa lập trình Website gói Premium chất lượng cao</h2>
-        </div>
-        <div class="row slideanim flex-children">
-            <div class="col-md-12">
-                <h3>Giới thiệu</h3>
-                <div>
-                    <script>
-                        [
-                            '<strong>Nếu bạn muốn tự tay lập trình website tiếp thị, truyền thông, CV xin việc, website giới thiệu bản thân tới người khác thì đây chính là khoá học dành cho bạn!</strong>',
-                            ' Khoá học kéo dài 8 buổi trong vòng 1 tháng (mỗi tuần 2 buổi).'
-                        ].displayAsList();
-                    </script>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <h3>Chi tiết</h3>
-                <!--https://www.youtube.com/watch?v=4YglRVf6o0w-->
-                <!-- sẽ là nguồn cảm hứng vô hạn để bạn bắt đầu con đường thiết kế của mình.
+				<div class="pt-flip-box-back">
+					<div class="flipbox-content">
+																			<div class="icon-wrapper pt-fb-icon-view-default pt-fb-icon-shape-circle">
+							<img src='wp-content/uploads/2017/12/if_angular_308434.png'>
+							</div>
+												
+													<p>
+								<p>Đăng ký khóa học về JavaScript bạn sẽ được học thêm kiến thức AngularJS</p><p>Học phí: 200.000đ/2 tuần</p>							</p>
+						
+													<div class="pt-fb-button-wrapper">
+								<a class="pt-fb-button" href="js.1.html">
+									  <span class="elementor-button-text">Đăng ký ngay</span>
+								</a>
+							</div>
+											</div>
+				</div>
 
-                Giảng viên siêu nhiệt tình và dễ thương sẽ giúp những bài giảng dễ hiểu trở nên thú vị hơn với bạn đó.
-                Bật mí thêm cho bạn, các phòng học của colorME đẹp lung linh, ảo cực, đây sẽ là nơi để bạn tuôn trào cảm hứng và tạo ra những tác phẩm để đời!-->
-                <script>
-                    [
-                        'Bạn sẽ được lập trình những dự án và tự tay thuyết trình về dự án của mình.',
-                        'Thành công của bạn là bằng chứng nhận lớn nhất cho chất lượng đào tạo của ' + company_name,
-                        'Và tất nhiên, không thể thiếu, bạn sẽ nhận được chứng chỉ từ ' + company_name + ' sau khi hoàn thành khoá học nữa đó!'
-                    ].displayAsList();
-                </script>
-                <!--https://www.youtube.com/watch?v=o1RhowB57B4-->
-            </div>
-            <div class="col-md-12">
-                <h3>Khoá học này giúp bạn</h3>
-                <script>
-                    [
-                        "Tự tay lập trình, chỉnh sửa website tiếp thị (landingpage, banner, mẫu nhập dữ liệu,...)",
-                        "Tạo website CV hồ sơ xin việc chinh phục nhà tuyển dụng",
-                        "Nắm vững lý thuyết lập trình căn bản và lập trình thành thạo website."
-                    ].displayAsList();
-                </script>
-                <!--            Link tham khảo bài tập học viên sau khi hoàn thành khóa học: -->
-            </div>
-            <div class="col-md-12">
-                <h3>
-                    Chính sách giá
-                </h3>
-                <script>
-                    /*Link event thông tin khóa học: https://www.facebook.com/events/202994166826723/ (chỉ cần copy link này và paste lên timeline cá nhân của bạn là okie ạ)*/
-                    [
-                        '<strong>Siêu ưu đãi</strong>, Share event, đăng kí và hoàn thành học phí sớm: Học phí giảm <strong>200.000 đ</strong>',
-                        'Đăng kí theo nhóm 3 người và hoàn thành học phí sớm: Học phí giảm <strong>100.000 đ</strong>'
-                    ].displayAsList()
-                </script>
-                <h3>Lưu ý</h3>
-
-                *Các khóa học học viên vui lòng mang laptop cá nhân theo để thực hành. phần mềm
-                <script>write(company_name)</script>
-                sẽ hỗ trợ bạn cài đặt.
-                <h3>Lịch học</h3>
-                <p>
-                    (7h-9h tối) Thứ 3 - Thứ 5 - Thứ 7 <br>
-                    <script>write(address)</script>
-                    <br>
-                    Khai giảng ngày 30 tháng 2 năm 2017
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">Tìm hiểu thêm</h2>
-        <div class="row">
-            <div class="col-sm-5">
-                <p>Để lại câu hỏi và chúng tôi sẽ trả lời bạn trong vòng 12 tiếng</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span>
-                    <script>write(address)</script>
-                </p>
-                <p><span class="glyphicon glyphicon-phone"></span> Gặp hỗ trợ viên: 098.359.0363</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> Gặp hỗ trợ viên: qtvhao@gmail.com</p>
-            </div>
-            <div class="col-sm-7 slideanim">
-                <form target="_blank"
-                      action="https://docs.google.com/forms/d/e/1FAIpQLSepDgQ1VExXJjpdhwFxwf5Nve8tVo-_kXTW2EcN3n7t1E4qxw/viewform"
-                      method="get">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="entry.1057078220" placeholder="Tên của bạn"
-                                   type="text">
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="number-phone" name="entry.1305844495"
-                                   placeholder="Số điện thoại của bạn" type="text">
-                        </div>
-                    </div>
-                    <textarea class="form-control" id="comments" name="entry.521895337" placeholder="Comment"
-                              rows="5"></textarea><br>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right" type="submit">Nhận tư vấn từ
-                                <script>write(company_name)</script>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--
-
-    <div id="googleMap" style="height:400px;width:100%;"></div>
-
-    &lt;!&ndash; Add Google Maps &ndash;&gt;
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-        function initialize() {
-            var mapProp = {
-                center:myCenter,
-                zoom:12,
-                scrollwheel:false,
-                draggable:false,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
-
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-            var marker = new google.maps.Marker({
-                position:myCenter,
-            });
-
-            marker.setMap(map);
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    -->
-
-    <footer class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>Theme Made By <a href="https://kipalog.com/" target="_blank" title="Visit Kipalog">Kipalog</a></p>
-    </footer>
-</div>
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-bg" style="
-    background: url(http://i.imgur.com/dYNBRGJ.png);
-    position: absolute;
-    height: 457px;
-    width: 186px;
-    left: -88px;
-    bottom: 0;
-"></div>
-            <div class="modal-body" style="padding: 30px 40px 30px 100px;">
-                <script>
-                    function validateForm() {
-                        if (jQuery('#popup_input_sodienthoai').val() == '') {
-                            jQuery('.sodienthoaikhonghople').show();
-                        } else {
-                            //valid input
-                            setCookie('no_show_modal_get_phone_number', 'true', 365);
-                            jQuery('#myModal').modal('hide');
+			</div>
+		   </div>
+					</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="231dcb7a" class="elementor-element elementor-element-231dcb7a elementor-section-boxed elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="69c0396e" class="elementor-element elementor-element-69c0396e elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div data-id="7b12142d" class="elementor-element elementor-element-7b12142d elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="702ebe" class="elementor-element elementor-element-702ebe elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Hi-Tech</h3>		</div>
+				</div>
+				<section data-id="3da0a5fb" class="elementor-element elementor-element-3da0a5fb elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div data-id="47c1bde" class="elementor-element elementor-element-47c1bde elementor-column elementor-col-50 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="2d92308" class="elementor-element elementor-element-2d92308 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+				<i class="fa fa-calendar"></i>
+			</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="79345ed9" class="elementor-element elementor-element-79345ed9 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Hiệu quả nhất thị trường</h3>		</div>
+				</div>
+				<div data-id="66d8dcfe" class="elementor-element elementor-element-66d8dcfe elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Khóa học kéo dài 2 tuần, giúp bạn nắm chắc kiến thức cơ bản tới nâng cao trong CSS. Với các bạn sinh viên, khóa học cũng giúp bạn vượt qua môn thiết kế web ở trường và tìm được cơ hội thực tập cho bản thân.</p></div>
+				</div>
+				</div>
+				<div data-id="47d9a423" class="elementor-element elementor-element-47d9a423 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+				<i class="fa fa-battery-4"></i>
+			</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="10ecc3a3" class="elementor-element elementor-element-10ecc3a3 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Môi trường học thoải mái</h3>		</div>
+				</div>
+				<div data-id="5a8011c0" class="elementor-element elementor-element-5a8011c0 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Học viên được học trong môi trường tràn đầy năng lượng. Và niềm vui đó sẽ giúp học viên học tập trung và hiệu quả hơn</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="17b9efe5" class="elementor-element elementor-element-17b9efe5 elementor-column elementor-col-50 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="27900d46" class="elementor-element elementor-element-27900d46 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+				<i class="fa fa-commenting-o"></i>
+			</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="742046ae" class="elementor-element elementor-element-742046ae elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Thực tập ở các công ty</h3>		</div>
+				</div>
+				<div data-id="35e70f6f" class="elementor-element elementor-element-35e70f6f elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Trong khóa học bạn sẽ được doanh nghiệp thật sự tạo môi trường và trực tiếp hướng dẫn làm việc. Sau khóa học bạn có thể xin thực tập vào bất cứ công ty nào tại Việt Nam. Chúng tôi đào tạo ra thực tập sinh có lương</p></div>
+				</div>
+				</div>
+				<div data-id="2fa70d84" class="elementor-element elementor-element-2fa70d84 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+				<i class="fa fa-envelope-o"></i>
+			</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="787ff3a5" class="elementor-element elementor-element-787ff3a5 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Học lại bất cứ khi nào</h3>		</div>
+				</div>
+				<div data-id="e42c129" class="elementor-element elementor-element-e42c129 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Sau khóa học, học viên có thể học lại miễn phí trong trường hợp học viên vẫn còn chưa nắm chắc kiến thức</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="32322f8" class="elementor-element elementor-element-32322f8 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="134b66da" class="elementor-element elementor-element-134b66da elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="3d0ea994" class="elementor-element elementor-element-3d0ea994 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Giảng viên</h3>		</div>
+				</div>
+				<section data-id="2a99ae4" class="elementor-element elementor-element-2a99ae4 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="170ef6c" class="elementor-element elementor-element-170ef6c elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="5aed1aca" class="elementor-element elementor-element-5aed1aca elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="189" height="189" src="wp-content/uploads/2017/12/circle-1.png" class="attachment-full size-full" alt="" srcset="http://shop2yqupwku.tanzaki.com/wp-content/uploads/2017/12/circle-1.png 189w, http://shop2yqupwku.tanzaki.com/wp-content/uploads/2017/12/circle-1-150x150.png 150w" sizes="(max-width: 189px) 100vw, 189px" />		</div>
+				</div>
+				</div>
+				<div data-id="317152b8" class="elementor-element elementor-element-317152b8 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Bạn là một phần quan trọng của lớp học. Chúng tôi luôn coi học viên là một thành viên  trong team, và team phải hỗ trợ bạn hết sức</p></div>
+				</div>
+				</div>
+				<div data-id="462be2b2" class="elementor-element elementor-element-462be2b2 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">trainer shop100 edu giải phóng</h3>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="2a81e2d1" class="elementor-element elementor-element-2a81e2d1 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="1b1f855" class="elementor-element elementor-element-1b1f855 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="189" height="189" src="wp-content/uploads/2017/12/circle2-1.png" class="attachment-full size-full" alt="" srcset="http://shop2yqupwku.tanzaki.com/wp-content/uploads/2017/12/circle2-1.png 189w, http://shop2yqupwku.tanzaki.com/wp-content/uploads/2017/12/circle2-1-150x150.png 150w" sizes="(max-width: 189px) 100vw, 189px" />		</div>
+				</div>
+				</div>
+				<div data-id="432c474d" class="elementor-element elementor-element-432c474d elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Với nhiều năm trong nghề, tôi sẽ hướng dẫn các thành viên của team những phương pháp lập trình xây dựng website bằng các công cụ chuyên nghiệp.</p></div>
+				</div>
+				</div>
+				<div data-id="253466a7" class="elementor-element elementor-element-253466a7 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">CEO Shop100 Việt nam</h3>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="9eec41f" class="elementor-element elementor-element-9eec41f elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="202e8ab1" class="elementor-element elementor-element-202e8ab1 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="189" height="189" src="wp-content/uploads/2017/12/circle3-1.png" class="attachment-full size-full" alt="" srcset="http://shop2yqupwku.tanzaki.com/wp-content/uploads/2017/12/circle3-1.png 189w, http://shop2yqupwku.tanzaki.com/wp-content/uploads/2017/12/circle3-1-150x150.png 150w" sizes="(max-width: 189px) 100vw, 189px" />		</div>
+				</div>
+				</div>
+				<div data-id="2396c25" class="elementor-element elementor-element-2396c25 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Công việc của tôi là làm việc với server, trong buổi học cuối tôi sẽ hướng dẫn bạn cách làm việc với server, cách chuyển website đã thiết kế lên môi trường Internet để có thể chia sẻ nó cho bạn bè, và đặc biệt là có thể trình bày nó cho nhà tuyển dụng.</p></div>
+				</div>
+				</div>
+				<div data-id="107243d1" class="elementor-element elementor-element-107243d1 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Trainer Shop100 Edu chùa láng</h3>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="54d8c836" class="elementor-element elementor-element-54d8c836 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="3c3eaa5" class="elementor-element elementor-element-3c3eaa5 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="5fa126db" class="elementor-element elementor-element-5fa126db elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-large">ĐỐI TÁC CHÍNH</h2>		</div>
+				</div>
+				<section data-id="1edd0ba1" class="elementor-element elementor-element-1edd0ba1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div data-id="3822d050" class="elementor-element elementor-element-3822d050 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="3b9ff3e2" class="elementor-element elementor-element-3b9ff3e2 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/snycy.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="6b470166" class="elementor-element elementor-element-6b470166 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="1588364b" class="elementor-element elementor-element-1588364b elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/x.venox_.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="23caf774" class="elementor-element elementor-element-23caf774 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="30a2c3f6" class="elementor-element elementor-element-30a2c3f6 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/quest.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="6e4369f1" class="elementor-element elementor-element-6e4369f1 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="300f14c" class="elementor-element elementor-element-300f14c elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/geo.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="206f7c7f" class="elementor-element elementor-element-206f7c7f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div data-id="2b521385" class="elementor-element elementor-element-2b521385 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="261ebcc6" class="elementor-element elementor-element-261ebcc6 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/madrin.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="57900f7e" class="elementor-element elementor-element-57900f7e elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="79ca266b" class="elementor-element elementor-element-79ca266b elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/digit.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="7b3b15d7" class="elementor-element elementor-element-7b3b15d7 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="717df637" class="elementor-element elementor-element-717df637 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/mapmaster.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="34aa3d85" class="elementor-element elementor-element-34aa3d85 elementor-sm-50 elementor-column elementor-col-25 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="594207d4" class="elementor-element elementor-element-594207d4 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+		<img width="200" height="150" src="wp-content/uploads/2017/12/masso.png" class="attachment-full size-full" alt="" />		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="440289a2" class="elementor-element elementor-element-440289a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="140fe69b" class="elementor-element elementor-element-140fe69b elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="698277e2" class="elementor-element elementor-element-698277e2 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+				<i class="fa fa-diamond"></i>
+			</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="5b250afd" class="elementor-element elementor-element-5b250afd elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Học ở Shop100 hoàn toàn khác. Công ty dùng công nghệ cao để giúp đẩy nhanh hiệu quả học. Sau 1 tháng, không chỉ tớ tạo ra được website và xin được việc ưng ý, tớ còn nắm chắc kiến thức nền để học thêm các công nghệ web khác</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="085518a" class="elementor-element elementor-element-085518a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="f21c43b" class="elementor-element elementor-element-f21c43b elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="b0e0f82" class="elementor-element elementor-element-b0e0f82 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Bạn là doanh nghiệp? Bạn đang tìm kiếm giải pháp trọn gói đưa doanh nghiệp của bạn online?</h2>		</div>
+				</div>
+				<div data-id="f4b0fed" class="elementor-element elementor-element-f4b0fed elementor-align-center elementor-mobile-align-center animated fadeInRight animated-fast elementor-invisible elementor-widget elementor-widget-button" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="http://shop100.vn/" class="elementor-button-link elementor-button elementor-size-sm" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-align-icon-right elementor-button-icon">
+				<i class="fa fa-fast-forward"></i>
+			</span>
+						<span class="elementor-button-text">thuê chúng tôi</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="823ffd8" class="elementor-element elementor-element-823ffd8 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section-content-middle elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="7d884eb" class="elementor-element elementor-element-7d884eb elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="450f0be" class="elementor-element elementor-element-450f0be elementor-widget elementor-widget-google_maps" data-element_type="google_maps.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-custom-embed"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=C%C3%B4ng%20Ty%20c%E1%BB%95%20ph%E1%BA%A7n%20CEKS&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"></iframe></div>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="46680f7" class="elementor-element elementor-element-46680f7 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="596a53d" class="elementor-element elementor-element-596a53d elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Liên hệ</h2>		</div>
+				</div>
+				<div data-id="dd5a0d3" class="elementor-element elementor-element-dd5a0d3 elementor-align-left elementor-widget elementor-widget-icon-list" data-element_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-map-marker"></i>
+						</span>
+										<span class="elementor-icon-list-text">Văn Phòng 203 Số 185 Phố Chùa Láng - Láng Thượng - Đống Đa - HN</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-phone"></i>
+						</span>
+										<span class="elementor-icon-list-text">0902.132.497</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-envelope-o"></i>
+						</span>
+										<span class="elementor-icon-list-text">qtvhao@gmail.com</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-id="52d7850d" class="elementor-element elementor-element-52d7850d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div data-id="5ec78c55" class="elementor-element elementor-element-5ec78c55 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="22a8e8a4" class="elementor-element elementor-element-22a8e8a4 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Về Shop100</h3>		</div>
+				</div>
+				<div data-id="14362e76" class="elementor-element elementor-element-14362e76 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Bắt đầu từ 2015 với mục tiêu rõ ràng là giúp sinh viên Việt Nam học tập những kiến thức và kỹ năng thực tế trong ngành công nghệ cao. Từ đó giúp ngành sinh viên Việt Nam theo kịp đà phát triển của quốc tế.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="75fa95e8" class="elementor-element elementor-element-75fa95e8 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="ed4fb6a" class="elementor-element elementor-element-ed4fb6a elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-large">Dịch vụ khác</h3>		</div>
+				</div>
+				<div data-id="2a6a04d" class="elementor-element elementor-element-2a6a04d elementor-widget elementor-widget-icon-list" data-element_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-dot-circle-o"></i>
+						</span>
+										<span class="elementor-icon-list-text">Dịch vụ thiết kế Web doanh nghiệp trọn gói</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-dot-circle-o"></i>
+						</span>
+										<span class="elementor-icon-list-text">Dịch vụ Outsourcing</span>
+									</li>
+								<li class="elementor-icon-list-item" >
+											<span class="elementor-icon-list-icon">
+							<i class="fa fa-dot-circle-o"></i>
+						</span>
+										<span class="elementor-icon-list-text">Dịch vụ Training doanh nghiệp</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		    <style>div#wh-widget-send-button {
+            margin-bottom: -14px!important;
+        }</style>
+	<!-- WhatsHelp.io widget -->
+	<script type="text/javascript">
+        (function () {
+            var options = {"order":"facebook,whatsapp,viber,snapchat,line,telegram,vkontakte,sms,call,email","company_logo_url":"https:\/\/i.imgur.com\/d7TirSv.png","greeting_message":"Ng\u1ecdc Loan: Hi, Loan c\u00f3 th\u1ec3 gi\u00fap g\u00ec qu\u00fd kh\u00e1ch","call_to_action":"Chat v\u1edbi h\u1ed7 tr\u1ee3 vi\u00ean","button_color":"#129BF4","showHelloPopup":"1","position":"right","facebook":"901402113372124"};
+            var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () {
+                WidgetHelper.encodeGetParams = function (a){
+                    var b=[];
+                    for(var c in a) {
+                        if(a.hasOwnProperty(c)){
+                            b.push(encodeURIComponent(c) + "=" + encodeURIComponent(a[c]));
                         }
                     }
-                </script>
-                <form target="_blank"
-                      action="https://docs.google.com/forms/d/e/1FAIpQLSdCU7uoLpYEbc15FeiqSX9F4KBCLWvJ8cRt14UYeB9mSrAh1g/viewform"
-                      onsubmit="validateForm()">
-                    <div style="font-size: 35px;line-height: normal;color:#f4511e">BẠN ĐÃ NHẬN MÃ GIẢM GIÁ 700.000 ĐỒNG CỦA
-                    <script>write(company_name)</script> !!!</div>
-                    <div>
-                        Chúc mừng bạn là <strong>người may mắn đăng ký sớm</strong> của ngày hôm nay, hãy điền thông tin vào ô dưới để nhận ngay MÃ GIẢM GIÁ 700.000 đồng cho khóa học.
-                    </div>
-                    <div><span style="color:red">*</span> Mã giảm giá sẽ hết hạn sau ngày
-                        <script>write(dd_mm_yy_tomorrow())</script></div>
-                    <input type="number" id="popup_input_sodienthoai" class="form-control" required
-                           name="entry.670154567" title="" placeholder="Click nhập số diện thoại của bạn">
-                    <span class="hide sodienthoaikhonghople">Số điện thoại không hợp lệ. Vui lòng nhập lại!</span>
-                    Chúng tôi sẽ gọi cho bạn khi quay lại làm việc vào ngày mai
-                    <div class="form-group">
-                        <select name="buoi" class="form-control" id="buoi_callback" title="">
-                            <option value="sang">vào buổi sáng</option>
-                            <option value="trua">vào buổi trưa</option>
-                            <option value="toi">vào buổi tối</option>
-                        </select>
-                    </div>
-                    <button class="btn btn-lg btn-danger" type="submit">Click để được gọi lại</button>
-                </form>
-            </div>
-        </div>
-
-    </div>
-</div>
-<script>
-    $(document).ready(function () {
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage'], [href='#pricing']").on('click', function (event) {
-
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 300, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        });
-
-        // Slide in elements on scroll
-        $(window).scroll(function () {
-            $(".slideanim").each(function () {
-                var pos = $(this).offset().top;
-
-                var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
-                    $(this).addClass("slide");
-                }
-            });
-        }).trigger('scroll');
-    });
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        if (getCookie('no_show_modal_get_phone_number') !== 'true') {
-            $("#myModal").modal();
-        }
-    });
+                    b.push("locale=vi_VN");
+                    b.push("showHelloPopup=1");
+                    return 0===b.length?"":b.join("&")
+                };
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+	</script>
+	<!-- /WhatsHelp.io widget -->
+	<script type='text/javascript' src='wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/animated-main.js'></script>
+<script type='text/javascript' src='wp-content/plugins/pt-elementor-addons-lite/assets/js/jquery.masonry.js'></script>
+<script type='text/javascript' src='wp-content/plugins/pt-elementor-addons-lite/assets/js/pt-custom.js'></script>
+<script type='text/javascript' src='wp-content/themes/twentytwelve/js/navigation.js'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/sj-elementor-addon/assets/sjea-frontend.js'></script>
+<script type='text/javascript' src='wp-content/plugins/navmenu-addon-for-elementor/assets/js/modernizr.custom.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ElementorMenusFrontendConfig = {"ajaxurl":"http:\/\/shop2yqupwku.tanzaki.com\/wp-admin\/admin-ajax.php","nonce":"542ba39d94"};
+var elementorScreenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+var elementorSecondaryScreenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
 </script>
-
+<script type='text/javascript' src='wp-content/plugins/navmenu-addon-for-elementor/assets/js/frontend.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/position.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/swiper/swiper.jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var elementorFrontendConfig = {"isEditMode":"","settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_enable_lightbox_in_editor":"yes"}},"is_rtl":"","urls":{"assets":"http:\/\/shop2yqupwku.tanzaki.com\/wp-content\/plugins\/elementor\/assets\/"},"post":{"id":5,"title":"Kh\u00f3a h\u1ecdc CSS cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u","excerpt":""}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.min.js'></script>
+</div>
 </body>
 </html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 1422/33 objects using disk
+Page Caching using disk: enhanced 
+Database Caching using memcached
+
+Served from: ~^(.*)\\.tanzaki\\.com$ @ 2017-12-30 16:45:46 by W3 Total Cache
+-->
