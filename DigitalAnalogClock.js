@@ -5,7 +5,7 @@ var minutes;
 var thetaM;
 var hours;
 var thetaH;
-var sz = 400;
+var sz = 200;
 var dia = 7 * sz / 8;
 var rad = dia / 2;
 var hL = rad / 2;
@@ -19,7 +19,9 @@ var majTickA;
 var minTickA;
 
 function setup() {
-  createCanvas(sz, sz);
+  let canvas = createCanvas(sz, sz);
+  canvas.parent('canvas-container');
+
   majTickA = TWO_PI / majTicks;
   minTickA = TWO_PI / minTicks;
 }
