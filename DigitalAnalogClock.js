@@ -48,7 +48,7 @@ function draw() {
   
   stroke(255,0,0);
   strokeWeight(1);
-  line(0,0,sL * Math.cos(thetaS - PI/2), sL * Math.sin(thetaS - PI/2));
+  // line(0,0,sL * Math.cos(thetaS - PI/2), sL * Math.sin(thetaS - PI/2));
   
   
   stroke(0);
